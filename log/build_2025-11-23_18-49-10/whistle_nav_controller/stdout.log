@@ -1,0 +1,30 @@
+running develop
+Removing /home/anand/whistle_safety_ws/install/whistle_nav_controller/lib/python3.10/site-packages/whistle-nav-controller.egg-link (link to .)
+running egg_info
+writing ../../build/whistle_nav_controller/whistle_nav_controller.egg-info/PKG-INFO
+writing dependency_links to ../../build/whistle_nav_controller/whistle_nav_controller.egg-info/dependency_links.txt
+writing entry points to ../../build/whistle_nav_controller/whistle_nav_controller.egg-info/entry_points.txt
+writing requirements to ../../build/whistle_nav_controller/whistle_nav_controller.egg-info/requires.txt
+writing top-level names to ../../build/whistle_nav_controller/whistle_nav_controller.egg-info/top_level.txt
+reading manifest file '../../build/whistle_nav_controller/whistle_nav_controller.egg-info/SOURCES.txt'
+writing manifest file '../../build/whistle_nav_controller/whistle_nav_controller.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/anand/whistle_safety_ws/build/whistle_nav_controller/build/lib/whistle_nav_controller
+copying whistle_nav_controller/nav_to_whistle.py -> /home/anand/whistle_safety_ws/build/whistle_nav_controller/build/lib/whistle_nav_controller
+copying whistle_nav_controller/__init__.py -> /home/anand/whistle_safety_ws/build/whistle_nav_controller/build/lib/whistle_nav_controller
+running install
+running install_lib
+creating /home/anand/whistle_safety_ws/install/whistle_nav_controller/lib/python3.10/site-packages/whistle_nav_controller
+copying /home/anand/whistle_safety_ws/build/whistle_nav_controller/build/lib/whistle_nav_controller/nav_to_whistle.py -> /home/anand/whistle_safety_ws/install/whistle_nav_controller/lib/python3.10/site-packages/whistle_nav_controller
+copying /home/anand/whistle_safety_ws/build/whistle_nav_controller/build/lib/whistle_nav_controller/__init__.py -> /home/anand/whistle_safety_ws/install/whistle_nav_controller/lib/python3.10/site-packages/whistle_nav_controller
+byte-compiling /home/anand/whistle_safety_ws/install/whistle_nav_controller/lib/python3.10/site-packages/whistle_nav_controller/nav_to_whistle.py to nav_to_whistle.cpython-310.pyc
+byte-compiling /home/anand/whistle_safety_ws/install/whistle_nav_controller/lib/python3.10/site-packages/whistle_nav_controller/__init__.py to __init__.cpython-310.pyc
+running install_data
+copying resource/whistle_nav_controller -> /home/anand/whistle_safety_ws/install/whistle_nav_controller/share/ament_index/resource_index/packages
+copying package.xml -> /home/anand/whistle_safety_ws/install/whistle_nav_controller/share/whistle_nav_controller
+running install_egg_info
+Copying ../../build/whistle_nav_controller/whistle_nav_controller.egg-info to /home/anand/whistle_safety_ws/install/whistle_nav_controller/lib/python3.10/site-packages/whistle_nav_controller-0.1.0-py3.10.egg-info
+running install_scripts
+Installing nav_to_whistle script to /home/anand/whistle_safety_ws/install/whistle_nav_controller/lib/whistle_nav_controller
+writing list of installed files to '/home/anand/whistle_safety_ws/build/whistle_nav_controller/install.log'

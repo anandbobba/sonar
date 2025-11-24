@@ -1,0 +1,2 @@
+[console_scripts]
+nav_to_whistle = whistle_nav_controller.nav_to_whistle:main

@@ -1,0 +1,17 @@
+[0.468s] Invoking command in '/home/anand/whistle_safety_ws/build/whistle_nav_controller': PYTHONPATH=/home/anand/whistle_safety_ws/build/whistle_nav_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anand/whistle_safety_ws/install/whistle_nav_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/anand/whistle_safety_ws/build/whistle_nav_controller/build --no-deps symlink_data
+[0.679s] running develop
+[0.814s] running egg_info
+[0.823s] writing whistle_nav_controller.egg-info/PKG-INFO
+[0.823s] writing dependency_links to whistle_nav_controller.egg-info/dependency_links.txt
+[0.823s] writing entry points to whistle_nav_controller.egg-info/entry_points.txt
+[0.823s] writing requirements to whistle_nav_controller.egg-info/requires.txt
+[0.823s] writing top-level names to whistle_nav_controller.egg-info/top_level.txt
+[0.844s] reading manifest file 'whistle_nav_controller.egg-info/SOURCES.txt'
+[0.845s] writing manifest file 'whistle_nav_controller.egg-info/SOURCES.txt'
+[0.853s] running build_ext
+[0.854s] Creating /home/anand/whistle_safety_ws/install/whistle_nav_controller/lib/python3.10/site-packages/whistle-nav-controller.egg-link (link to .)
+[0.854s] Installing nav_to_whistle script to /home/anand/whistle_safety_ws/install/whistle_nav_controller/lib/whistle_nav_controller
+[0.854s] 
+[0.854s] Installed /home/anand/whistle_safety_ws/build/whistle_nav_controller
+[0.854s] running symlink_data
+[0.877s] Invoked command in '/home/anand/whistle_safety_ws/build/whistle_nav_controller' returned '0': PYTHONPATH=/home/anand/whistle_safety_ws/build/whistle_nav_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anand/whistle_safety_ws/install/whistle_nav_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/anand/whistle_safety_ws/build/whistle_nav_controller/build --no-deps symlink_data

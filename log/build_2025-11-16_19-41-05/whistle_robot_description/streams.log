@@ -1,0 +1,44 @@
+[0.034s] Invoking command in '/home/anand/whistle_safety_ws/build/whistle_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anand/whistle_safety_ws/install/zenoh_bridge:/home/anand/whistle_safety_ws/install/alert_manager:/home/anand/whistle_safety_ws/install/whistle_detector:/home/anand/whistle_safety_ws/install/sim_microphone_sensor:/opt/ros/humble /usr/bin/cmake /home/anand/whistle_safety_ws/src/whistle_robot_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/anand/whistle_safety_ws/install/whistle_robot_description
+[0.520s] -- The C compiler identification is GNU 11.4.0
+[0.520s] -- The CXX compiler identification is GNU 11.4.0
+[0.520s] -- Detecting C compiler ABI info
+[0.520s] -- Detecting C compiler ABI info - done
+[0.520s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.520s] -- Detecting C compile features
+[0.520s] -- Detecting C compile features - done
+[0.520s] -- Detecting CXX compiler ABI info
+[0.521s] -- Detecting CXX compiler ABI info - done
+[0.521s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.521s] -- Detecting CXX compile features
+[0.521s] -- Detecting CXX compile features - done
+[0.521s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.619s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.672s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.753s] -- Configuring done
+[0.756s] -- Generating done
+[0.757s] -- Build files have been written to: /home/anand/whistle_safety_ws/build/whistle_robot_description
+[0.761s] Invoked command in '/home/anand/whistle_safety_ws/build/whistle_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anand/whistle_safety_ws/install/zenoh_bridge:/home/anand/whistle_safety_ws/install/alert_manager:/home/anand/whistle_safety_ws/install/whistle_detector:/home/anand/whistle_safety_ws/install/sim_microphone_sensor:/opt/ros/humble /usr/bin/cmake /home/anand/whistle_safety_ws/src/whistle_robot_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/anand/whistle_safety_ws/install/whistle_robot_description
+[0.763s] Invoking command in '/home/anand/whistle_safety_ws/build/whistle_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anand/whistle_safety_ws/install/zenoh_bridge:/home/anand/whistle_safety_ws/install/alert_manager:/home/anand/whistle_safety_ws/install/whistle_detector:/home/anand/whistle_safety_ws/install/sim_microphone_sensor:/opt/ros/humble /usr/bin/cmake --build /home/anand/whistle_safety_ws/build/whistle_robot_description -- -j16 -l16
+[0.797s] Invoked command in '/home/anand/whistle_safety_ws/build/whistle_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anand/whistle_safety_ws/install/zenoh_bridge:/home/anand/whistle_safety_ws/install/alert_manager:/home/anand/whistle_safety_ws/install/whistle_detector:/home/anand/whistle_safety_ws/install/sim_microphone_sensor:/opt/ros/humble /usr/bin/cmake --build /home/anand/whistle_safety_ws/build/whistle_robot_description -- -j16 -l16
+[0.808s] Invoking command in '/home/anand/whistle_safety_ws/build/whistle_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anand/whistle_safety_ws/install/zenoh_bridge:/home/anand/whistle_safety_ws/install/alert_manager:/home/anand/whistle_safety_ws/install/whistle_detector:/home/anand/whistle_safety_ws/install/sim_microphone_sensor:/opt/ros/humble /usr/bin/cmake --install /home/anand/whistle_safety_ws/build/whistle_robot_description
+[0.815s] -- Install configuration: ""
+[0.815s] -- Execute custom install script
+[0.816s] -- Symlinking: /home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/urdf/whistle_robot.urdf.xacro
+[0.824s] -- Symlinking: /home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/launch/robot_description.launch.py
+[0.832s] -- Symlinking: /home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/rviz/view_robot.rviz
+[0.841s] -- Symlinking: /home/anand/whistle_safety_ws/install/whistle_robot_description/share/ament_index/resource_index/package_run_dependencies/whistle_robot_description
+[0.849s] -- Symlinking: /home/anand/whistle_safety_ws/install/whistle_robot_description/share/ament_index/resource_index/parent_prefix_path/whistle_robot_description
+[0.858s] -- Symlinking: /home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/environment/ament_prefix_path.sh
+[0.866s] -- Symlinking: /home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/environment/ament_prefix_path.dsv
+[0.875s] -- Symlinking: /home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/environment/path.sh
+[0.882s] -- Symlinking: /home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/environment/path.dsv
+[0.891s] -- Symlinking: /home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/local_setup.bash
+[0.899s] -- Symlinking: /home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/local_setup.sh
+[0.908s] -- Symlinking: /home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/local_setup.zsh
+[0.916s] -- Symlinking: /home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/local_setup.dsv
+[0.924s] -- Symlinking: /home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/package.dsv
+[0.932s] -- Symlinking: /home/anand/whistle_safety_ws/install/whistle_robot_description/share/ament_index/resource_index/packages/whistle_robot_description
+[0.941s] -- Symlinking: /home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/cmake/whistle_robot_descriptionConfig.cmake
+[0.951s] -- Symlinking: /home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/cmake/whistle_robot_descriptionConfig-version.cmake
+[0.958s] -- Symlinking: /home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/package.xml
+[0.969s] Invoked command in '/home/anand/whistle_safety_ws/build/whistle_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anand/whistle_safety_ws/install/zenoh_bridge:/home/anand/whistle_safety_ws/install/alert_manager:/home/anand/whistle_safety_ws/install/whistle_detector:/home/anand/whistle_safety_ws/install/sim_microphone_sensor:/opt/ros/humble /usr/bin/cmake --install /home/anand/whistle_safety_ws/build/whistle_robot_description

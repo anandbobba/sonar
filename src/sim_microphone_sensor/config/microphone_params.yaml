@@ -1,0 +1,10 @@
+microphone_simulator:
+  ros__parameters:
+    publish_rate: 10.0
+    base_noise_level: 0.1
+    whistle_intensity: 0.0
+```
+
+### File: `sim_microphone_sensor/resource/sim_microphone_sensor`
+```
+# Empty resource file (required by ament_python)

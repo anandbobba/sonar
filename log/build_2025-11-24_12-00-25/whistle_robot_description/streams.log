@@ -1,0 +1,24 @@
+[0.026s] Invoking command in '/home/anand/whistle_safety_ws/build/whistle_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anand/whistle_safety_ws/install/zenoh_bridge:/home/anand/whistle_safety_ws/install/alert_manager:/home/anand/whistle_safety_ws/install/whistle_detector:/opt/ros/humble /usr/bin/cmake --build /home/anand/whistle_safety_ws/build/whistle_robot_description -- -j16 -l16
+[0.594s] Invoked command in '/home/anand/whistle_safety_ws/build/whistle_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anand/whistle_safety_ws/install/zenoh_bridge:/home/anand/whistle_safety_ws/install/alert_manager:/home/anand/whistle_safety_ws/install/whistle_detector:/opt/ros/humble /usr/bin/cmake --build /home/anand/whistle_safety_ws/build/whistle_robot_description -- -j16 -l16
+[0.604s] Invoking command in '/home/anand/whistle_safety_ws/build/whistle_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anand/whistle_safety_ws/install/zenoh_bridge:/home/anand/whistle_safety_ws/install/alert_manager:/home/anand/whistle_safety_ws/install/whistle_detector:/opt/ros/humble /usr/bin/cmake --install /home/anand/whistle_safety_ws/build/whistle_robot_description
+[0.612s] -- Install configuration: ""
+[0.612s] -- Execute custom install script
+[0.613s] -- Up-to-date symlink: /home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/urdf/whistle_robot.urdf.xacro
+[0.613s] -- Up-to-date symlink: /home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/launch/robot_description.launch.py
+[0.613s] -- Up-to-date symlink: /home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/rviz/view_robot.rviz
+[0.614s] -- Up-to-date symlink: /home/anand/whistle_safety_ws/install/whistle_robot_description/share/ament_index/resource_index/package_run_dependencies/whistle_robot_description
+[0.614s] -- Up-to-date symlink: /home/anand/whistle_safety_ws/install/whistle_robot_description/share/ament_index/resource_index/parent_prefix_path/whistle_robot_description
+[0.614s] -- Up-to-date symlink: /home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/environment/ament_prefix_path.sh
+[0.614s] -- Up-to-date symlink: /home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/environment/ament_prefix_path.dsv
+[0.614s] -- Up-to-date symlink: /home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/environment/path.sh
+[0.614s] -- Up-to-date symlink: /home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/environment/path.dsv
+[0.614s] -- Up-to-date symlink: /home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/local_setup.bash
+[0.615s] -- Up-to-date symlink: /home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/local_setup.sh
+[0.615s] -- Up-to-date symlink: /home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/local_setup.zsh
+[0.615s] -- Up-to-date symlink: /home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/local_setup.dsv
+[0.615s] -- Symlinking: /home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/package.dsv
+[0.624s] -- Up-to-date symlink: /home/anand/whistle_safety_ws/install/whistle_robot_description/share/ament_index/resource_index/packages/whistle_robot_description
+[0.624s] -- Up-to-date symlink: /home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/cmake/whistle_robot_descriptionConfig.cmake
+[0.624s] -- Up-to-date symlink: /home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/cmake/whistle_robot_descriptionConfig-version.cmake
+[0.625s] -- Up-to-date symlink: /home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/package.xml
+[0.627s] Invoked command in '/home/anand/whistle_safety_ws/build/whistle_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anand/whistle_safety_ws/install/zenoh_bridge:/home/anand/whistle_safety_ws/install/alert_manager:/home/anand/whistle_safety_ws/install/whistle_detector:/opt/ros/humble /usr/bin/cmake --install /home/anand/whistle_safety_ws/build/whistle_robot_description

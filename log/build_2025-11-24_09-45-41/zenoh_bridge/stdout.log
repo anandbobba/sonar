@@ -1,0 +1,33 @@
+running develop
+Removing /home/anand/whistle_safety_ws/install/zenoh_bridge/lib/python3.10/site-packages/zenoh-bridge.egg-link (link to .)
+running egg_info
+writing ../../build/zenoh_bridge/zenoh_bridge.egg-info/PKG-INFO
+writing dependency_links to ../../build/zenoh_bridge/zenoh_bridge.egg-info/dependency_links.txt
+writing entry points to ../../build/zenoh_bridge/zenoh_bridge.egg-info/entry_points.txt
+writing requirements to ../../build/zenoh_bridge/zenoh_bridge.egg-info/requires.txt
+writing top-level names to ../../build/zenoh_bridge/zenoh_bridge.egg-info/top_level.txt
+reading manifest file '../../build/zenoh_bridge/zenoh_bridge.egg-info/SOURCES.txt'
+writing manifest file '../../build/zenoh_bridge/zenoh_bridge.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/anand/whistle_safety_ws/build/zenoh_bridge/build/lib/zenoh_bridge
+copying zenoh_bridge/zenoh_bridge_node.py -> /home/anand/whistle_safety_ws/build/zenoh_bridge/build/lib/zenoh_bridge
+copying zenoh_bridge/__init__.py -> /home/anand/whistle_safety_ws/build/zenoh_bridge/build/lib/zenoh_bridge
+running install
+running install_lib
+creating /home/anand/whistle_safety_ws/install/zenoh_bridge/lib/python3.10/site-packages/zenoh_bridge
+copying /home/anand/whistle_safety_ws/build/zenoh_bridge/build/lib/zenoh_bridge/zenoh_bridge_node.py -> /home/anand/whistle_safety_ws/install/zenoh_bridge/lib/python3.10/site-packages/zenoh_bridge
+copying /home/anand/whistle_safety_ws/build/zenoh_bridge/build/lib/zenoh_bridge/__init__.py -> /home/anand/whistle_safety_ws/install/zenoh_bridge/lib/python3.10/site-packages/zenoh_bridge
+byte-compiling /home/anand/whistle_safety_ws/install/zenoh_bridge/lib/python3.10/site-packages/zenoh_bridge/zenoh_bridge_node.py to zenoh_bridge_node.cpython-310.pyc
+byte-compiling /home/anand/whistle_safety_ws/install/zenoh_bridge/lib/python3.10/site-packages/zenoh_bridge/__init__.py to __init__.cpython-310.pyc
+running install_data
+copying resource/zenoh_bridge -> /home/anand/whistle_safety_ws/install/zenoh_bridge/share/ament_index/resource_index/packages
+copying package.xml -> /home/anand/whistle_safety_ws/install/zenoh_bridge/share/zenoh_bridge
+copying launch/zenoh_bridge.launch.py -> /home/anand/whistle_safety_ws/install/zenoh_bridge/share/zenoh_bridge/launch
+copying config/zenoh_params.yaml -> /home/anand/whistle_safety_ws/install/zenoh_bridge/share/zenoh_bridge/config
+copying scripts/cloud_subscriber.py -> /home/anand/whistle_safety_ws/install/zenoh_bridge/share/zenoh_bridge/scripts
+running install_egg_info
+Copying ../../build/zenoh_bridge/zenoh_bridge.egg-info to /home/anand/whistle_safety_ws/install/zenoh_bridge/lib/python3.10/site-packages/zenoh_bridge-0.1.0-py3.10.egg-info
+running install_scripts
+Installing zenoh_bridge_node script to /home/anand/whistle_safety_ws/install/zenoh_bridge/lib/zenoh_bridge
+writing list of installed files to '/home/anand/whistle_safety_ws/build/zenoh_bridge/install.log'

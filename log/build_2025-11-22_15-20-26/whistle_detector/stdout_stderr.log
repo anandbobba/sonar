@@ -1,0 +1,20 @@
+running develop
+running egg_info
+writing whistle_detector.egg-info/PKG-INFO
+writing dependency_links to whistle_detector.egg-info/dependency_links.txt
+writing entry points to whistle_detector.egg-info/entry_points.txt
+writing requirements to whistle_detector.egg-info/requires.txt
+writing top-level names to whistle_detector.egg-info/top_level.txt
+reading manifest file 'whistle_detector.egg-info/SOURCES.txt'
+writing manifest file 'whistle_detector.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/anand/whistle_safety_ws/install/whistle_detector/lib/python3.10/site-packages/whistle-detector.egg-link (link to .)
+Installing autonomous_responder script to /home/anand/whistle_safety_ws/install/whistle_detector/lib/whistle_detector
+Installing whistle_detector_node script to /home/anand/whistle_safety_ws/install/whistle_detector/lib/whistle_detector
+
+Installed /home/anand/whistle_safety_ws/build/whistle_detector
+running symlink_data
+symbolically linking /home/anand/whistle_safety_ws/build/whistle_detector/resource/whistle_detector -> /home/anand/whistle_safety_ws/install/whistle_detector/share/ament_index/resource_index/packages
+symbolically linking /home/anand/whistle_safety_ws/build/whistle_detector/package.xml -> /home/anand/whistle_safety_ws/install/whistle_detector/share/whistle_detector
+symbolically linking /home/anand/whistle_safety_ws/build/whistle_detector/launch/whistle_detector.launch.py -> /home/anand/whistle_safety_ws/install/whistle_detector/share/whistle_detector/launch
+symbolically linking /home/anand/whistle_safety_ws/build/whistle_detector/config/detector_params.yaml -> /home/anand/whistle_safety_ws/install/whistle_detector/share/whistle_detector/config

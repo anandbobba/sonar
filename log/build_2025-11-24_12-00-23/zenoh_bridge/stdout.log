@@ -1,0 +1,15 @@
+running develop
+running egg_info
+writing zenoh_bridge.egg-info/PKG-INFO
+writing dependency_links to zenoh_bridge.egg-info/dependency_links.txt
+writing entry points to zenoh_bridge.egg-info/entry_points.txt
+writing requirements to zenoh_bridge.egg-info/requires.txt
+writing top-level names to zenoh_bridge.egg-info/top_level.txt
+reading manifest file 'zenoh_bridge.egg-info/SOURCES.txt'
+writing manifest file 'zenoh_bridge.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/anand/whistle_safety_ws/install/zenoh_bridge/lib/python3.10/site-packages/zenoh-bridge.egg-link (link to .)
+Installing zenoh_bridge_node script to /home/anand/whistle_safety_ws/install/zenoh_bridge/lib/zenoh_bridge
+
+Installed /home/anand/whistle_safety_ws/build/zenoh_bridge
+running symlink_data

@@ -1,0 +1,32 @@
+[0.806s] Invoking command in '/home/anand/whistle_safety_ws/src/whistle_detector': PYTHONPATH=/home/anand/whistle_safety_ws/build/whistle_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anand/whistle_safety_ws/install/whistle_detector/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/whistle_detector build --build-base /home/anand/whistle_safety_ws/build/whistle_detector/build install --record /home/anand/whistle_safety_ws/build/whistle_detector/install.log --single-version-externally-managed install_data
+[1.059s] running egg_info
+[1.073s] writing ../../build/whistle_detector/whistle_detector.egg-info/PKG-INFO
+[1.074s] writing dependency_links to ../../build/whistle_detector/whistle_detector.egg-info/dependency_links.txt
+[1.074s] writing entry points to ../../build/whistle_detector/whistle_detector.egg-info/entry_points.txt
+[1.074s] writing requirements to ../../build/whistle_detector/whistle_detector.egg-info/requires.txt
+[1.074s] writing top-level names to ../../build/whistle_detector/whistle_detector.egg-info/top_level.txt
+[1.102s] reading manifest file '../../build/whistle_detector/whistle_detector.egg-info/SOURCES.txt'
+[1.104s] writing manifest file '../../build/whistle_detector/whistle_detector.egg-info/SOURCES.txt'
+[1.104s] running build
+[1.104s] running build_py
+[1.104s] copying whistle_detector/autonomous_responder.py -> /home/anand/whistle_safety_ws/build/whistle_detector/build/lib/whistle_detector
+[1.104s] copying whistle_detector/whistle_detector_node.py -> /home/anand/whistle_safety_ws/build/whistle_detector/build/lib/whistle_detector
+[1.104s] copying whistle_detector/__init__.py -> /home/anand/whistle_safety_ws/build/whistle_detector/build/lib/whistle_detector
+[1.105s] running install
+[1.110s] running install_lib
+[1.127s] copying /home/anand/whistle_safety_ws/build/whistle_detector/build/lib/whistle_detector/autonomous_responder.py -> /home/anand/whistle_safety_ws/install/whistle_detector/lib/python3.10/site-packages/whistle_detector
+[1.128s] byte-compiling /home/anand/whistle_safety_ws/install/whistle_detector/lib/python3.10/site-packages/whistle_detector/autonomous_responder.py to autonomous_responder.cpython-310.pyc
+[1.131s] running install_data
+[1.131s] copying resource/whistle_detector -> /home/anand/whistle_safety_ws/install/whistle_detector/share/ament_index/resource_index/packages
+[1.131s] copying package.xml -> /home/anand/whistle_safety_ws/install/whistle_detector/share/whistle_detector
+[1.131s] copying launch/whistle_detector.launch.py -> /home/anand/whistle_safety_ws/install/whistle_detector/share/whistle_detector/launch
+[1.132s] copying launch/adaptive_sound_follower.launch.py -> /home/anand/whistle_safety_ws/install/whistle_detector/share/whistle_detector/launch
+[1.132s] copying config/detector_params.yaml -> /home/anand/whistle_safety_ws/install/whistle_detector/share/whistle_detector/config
+[1.132s] running install_egg_info
+[1.147s] removing '/home/anand/whistle_safety_ws/install/whistle_detector/lib/python3.10/site-packages/whistle_detector-0.1.0-py3.10.egg-info' (and everything under it)
+[1.147s] Copying ../../build/whistle_detector/whistle_detector.egg-info to /home/anand/whistle_safety_ws/install/whistle_detector/lib/python3.10/site-packages/whistle_detector-0.1.0-py3.10.egg-info
+[1.148s] running install_scripts
+[1.286s] Installing autonomous_responder script to /home/anand/whistle_safety_ws/install/whistle_detector/lib/whistle_detector
+[1.286s] Installing whistle_detector_node script to /home/anand/whistle_safety_ws/install/whistle_detector/lib/whistle_detector
+[1.287s] writing list of installed files to '/home/anand/whistle_safety_ws/build/whistle_detector/install.log'
+[1.325s] Invoked command in '/home/anand/whistle_safety_ws/src/whistle_detector' returned '0': PYTHONPATH=/home/anand/whistle_safety_ws/build/whistle_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anand/whistle_safety_ws/install/whistle_detector/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/whistle_detector build --build-base /home/anand/whistle_safety_ws/build/whistle_detector/build install --record /home/anand/whistle_safety_ws/build/whistle_detector/install.log --single-version-externally-managed install_data

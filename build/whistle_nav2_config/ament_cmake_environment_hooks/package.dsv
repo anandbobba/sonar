@@ -1,0 +1,4 @@
+source;share/whistle_nav2_config/local_setup.bash
+source;share/whistle_nav2_config/local_setup.dsv
+source;share/whistle_nav2_config/local_setup.sh
+source;share/whistle_nav2_config/local_setup.zsh

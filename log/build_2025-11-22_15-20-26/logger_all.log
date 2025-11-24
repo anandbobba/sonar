@@ -1,0 +1,622 @@
+[0.070s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.071s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f22488a01f0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f2248863b80>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f2248863b80>>, mixin_verb=('build',))
+[0.096s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.096s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.096s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.096s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.096s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.096s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.096s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/anand/whistle_safety_ws'
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.097s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.097s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/alert_manager) by extensions ['ignore', 'ignore_ament_install']
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/alert_manager) by extension 'ignore'
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/alert_manager) by extension 'ignore_ament_install'
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/alert_manager) by extensions ['colcon_pkg']
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/alert_manager) by extension 'colcon_pkg'
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/alert_manager) by extensions ['colcon_meta']
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/alert_manager) by extension 'colcon_meta'
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/alert_manager) by extensions ['ros']
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/alert_manager) by extension 'ros'
+[0.107s] DEBUG:colcon.colcon_core.package_identification:Failed to parse potential ROS package manifest in'src/alert_manager': Error(s) in package 'src/alert_manager/package.xml':
+The manifest contains invalid XML:
+XML or text declaration not at start of entity: line 2, column 0
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/alert_manager) by extensions ['cmake', 'python']
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/alert_manager) by extension 'cmake'
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/alert_manager) by extension 'python'
+[0.107s] DEBUG:colcon.colcon_core.package_identification:Python package in 'src/alert_manager' passes arguments to the setup() function which requires a different identification extension than 'python'
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/alert_manager) by extensions ['python_setup_py']
+[0.107s] Level 1:colcon.colcon_core.package_identification:_identify(src/alert_manager) by extension 'python_setup_py'
+[0.242s] DEBUG:colcon.colcon_core.package_identification:Package 'src/alert_manager' with type 'python' and name 'alert_manager'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_microphone_sensor) by extensions ['ignore', 'ignore_ament_install']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_microphone_sensor) by extension 'ignore'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_microphone_sensor) by extension 'ignore_ament_install'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_microphone_sensor) by extensions ['colcon_pkg']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_microphone_sensor) by extension 'colcon_pkg'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_microphone_sensor) by extensions ['colcon_meta']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_microphone_sensor) by extension 'colcon_meta'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_microphone_sensor) by extensions ['ros']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_microphone_sensor) by extension 'ros'
+[0.245s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sim_microphone_sensor' with type 'ros.ament_python' and name 'sim_microphone_sensor'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_detector) by extensions ['ignore', 'ignore_ament_install']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_detector) by extension 'ignore'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_detector) by extension 'ignore_ament_install'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_detector) by extensions ['colcon_pkg']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_detector) by extension 'colcon_pkg'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_detector) by extensions ['colcon_meta']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_detector) by extension 'colcon_meta'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_detector) by extensions ['ros']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_detector) by extension 'ros'
+[0.246s] DEBUG:colcon.colcon_core.package_identification:Failed to parse potential ROS package manifest in'src/whistle_detector': Error(s) in package 'src/whistle_detector/package.xml':
+The manifest contains invalid XML:
+XML or text declaration not at start of entity: line 2, column 0
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_detector) by extensions ['cmake', 'python']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_detector) by extension 'cmake'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_detector) by extension 'python'
+[0.246s] DEBUG:colcon.colcon_core.package_identification:Python package in 'src/whistle_detector' passes arguments to the setup() function which requires a different identification extension than 'python'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_detector) by extensions ['python_setup_py']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_detector) by extension 'python_setup_py'
+[0.383s] DEBUG:colcon.colcon_core.package_identification:Package 'src/whistle_detector' with type 'python' and name 'whistle_detector'
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_gazebo) by extension 'ignore'
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_gazebo) by extension 'ignore_ament_install'
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_gazebo) by extensions ['colcon_pkg']
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_gazebo) by extension 'colcon_pkg'
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_gazebo) by extensions ['colcon_meta']
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_gazebo) by extension 'colcon_meta'
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_gazebo) by extensions ['ros']
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_gazebo) by extension 'ros'
+[0.384s] DEBUG:colcon.colcon_core.package_identification:Package 'src/whistle_gazebo' with type 'ros.ament_cmake' and name 'whistle_gazebo'
+[0.384s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_nav2_config) by extensions ['ignore', 'ignore_ament_install']
+[0.384s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_nav2_config) by extension 'ignore'
+[0.384s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_nav2_config) by extension 'ignore_ament_install'
+[0.384s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_nav2_config) by extensions ['colcon_pkg']
+[0.384s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_nav2_config) by extension 'colcon_pkg'
+[0.384s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_nav2_config) by extensions ['colcon_meta']
+[0.384s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_nav2_config) by extension 'colcon_meta'
+[0.384s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_nav2_config) by extensions ['ros']
+[0.384s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_nav2_config) by extension 'ros'
+[0.384s] DEBUG:colcon.colcon_core.package_identification:Package 'src/whistle_nav2_config' with type 'ros.ament_cmake' and name 'whistle_nav2_config'
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_nav_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_nav_controller) by extension 'ignore'
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_nav_controller) by extension 'ignore_ament_install'
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_nav_controller) by extensions ['colcon_pkg']
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_nav_controller) by extension 'colcon_pkg'
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_nav_controller) by extensions ['colcon_meta']
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_nav_controller) by extension 'colcon_meta'
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_nav_controller) by extensions ['ros']
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_nav_controller) by extension 'ros'
+[0.385s] DEBUG:colcon.colcon_core.package_identification:Package 'src/whistle_nav_controller' with type 'ros.ament_python' and name 'whistle_nav_controller'
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_robot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_robot_description) by extension 'ignore'
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_robot_description) by extension 'ignore_ament_install'
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_robot_description) by extensions ['colcon_pkg']
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_robot_description) by extension 'colcon_pkg'
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_robot_description) by extensions ['colcon_meta']
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_robot_description) by extension 'colcon_meta'
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_robot_description) by extensions ['ros']
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_robot_description) by extension 'ros'
+[0.386s] DEBUG:colcon.colcon_core.package_identification:Package 'src/whistle_robot_description' with type 'ros.ament_cmake' and name 'whistle_robot_description'
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_safety_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_safety_msgs) by extension 'ignore'
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_safety_msgs) by extension 'ignore_ament_install'
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_safety_msgs) by extensions ['colcon_pkg']
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_safety_msgs) by extension 'colcon_pkg'
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_safety_msgs) by extensions ['colcon_meta']
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_safety_msgs) by extension 'colcon_meta'
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_safety_msgs) by extensions ['ros']
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/whistle_safety_msgs) by extension 'ros'
+[0.386s] DEBUG:colcon.colcon_core.package_identification:Package 'src/whistle_safety_msgs' with type 'ros.ament_cmake' and name 'whistle_safety_msgs'
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/zenoh_bridge) by extensions ['ignore', 'ignore_ament_install']
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/zenoh_bridge) by extension 'ignore'
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/zenoh_bridge) by extension 'ignore_ament_install'
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/zenoh_bridge) by extensions ['colcon_pkg']
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/zenoh_bridge) by extension 'colcon_pkg'
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/zenoh_bridge) by extensions ['colcon_meta']
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/zenoh_bridge) by extension 'colcon_meta'
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/zenoh_bridge) by extensions ['ros']
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/zenoh_bridge) by extension 'ros'
+[0.387s] DEBUG:colcon.colcon_core.package_identification:Failed to parse potential ROS package manifest in'src/zenoh_bridge': Error(s) in package 'src/zenoh_bridge/package.xml':
+The manifest contains invalid XML:
+XML or text declaration not at start of entity: line 2, column 0
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/zenoh_bridge) by extensions ['cmake', 'python']
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/zenoh_bridge) by extension 'cmake'
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/zenoh_bridge) by extension 'python'
+[0.387s] DEBUG:colcon.colcon_core.package_identification:Python package in 'src/zenoh_bridge' passes arguments to the setup() function which requires a different identification extension than 'python'
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/zenoh_bridge) by extensions ['python_setup_py']
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/zenoh_bridge) by extension 'python_setup_py'
+[0.528s] DEBUG:colcon.colcon_core.package_identification:Package 'src/zenoh_bridge' with type 'python' and name 'zenoh_bridge'
+[0.528s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.528s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.528s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.528s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.528s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.544s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.544s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.546s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/anand/microros_ws/install
+[0.546s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/anand/rebel_ws/install
+[0.547s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/anand/ros2_works/install
+[0.547s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /home/anand/whistle_safety_ws/install
+[0.548s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 424 installed packages in /opt/ros/humble
+[0.549s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.587s] Level 5:colcon.colcon_core.verb:set package 'alert_manager' build argument 'cmake_args' from command line to 'None'
+[0.587s] Level 5:colcon.colcon_core.verb:set package 'alert_manager' build argument 'cmake_target' from command line to 'None'
+[0.587s] Level 5:colcon.colcon_core.verb:set package 'alert_manager' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.587s] Level 5:colcon.colcon_core.verb:set package 'alert_manager' build argument 'cmake_clean_cache' from command line to 'False'
+[0.587s] Level 5:colcon.colcon_core.verb:set package 'alert_manager' build argument 'cmake_clean_first' from command line to 'False'
+[0.587s] Level 5:colcon.colcon_core.verb:set package 'alert_manager' build argument 'cmake_force_configure' from command line to 'False'
+[0.587s] Level 5:colcon.colcon_core.verb:set package 'alert_manager' build argument 'ament_cmake_args' from command line to 'None'
+[0.587s] Level 5:colcon.colcon_core.verb:set package 'alert_manager' build argument 'catkin_cmake_args' from command line to 'None'
+[0.587s] Level 5:colcon.colcon_core.verb:set package 'alert_manager' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.587s] DEBUG:colcon.colcon_core.verb:Building package 'alert_manager' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/anand/whistle_safety_ws/build/alert_manager', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/anand/whistle_safety_ws/install/alert_manager', 'merge_install': False, 'path': '/home/anand/whistle_safety_ws/src/alert_manager', 'symlink_install': True, 'test_result_base': None}
+[0.588s] Level 5:colcon.colcon_core.verb:set package 'sim_microphone_sensor' build argument 'cmake_args' from command line to 'None'
+[0.588s] Level 5:colcon.colcon_core.verb:set package 'sim_microphone_sensor' build argument 'cmake_target' from command line to 'None'
+[0.588s] Level 5:colcon.colcon_core.verb:set package 'sim_microphone_sensor' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.588s] Level 5:colcon.colcon_core.verb:set package 'sim_microphone_sensor' build argument 'cmake_clean_cache' from command line to 'False'
+[0.588s] Level 5:colcon.colcon_core.verb:set package 'sim_microphone_sensor' build argument 'cmake_clean_first' from command line to 'False'
+[0.588s] Level 5:colcon.colcon_core.verb:set package 'sim_microphone_sensor' build argument 'cmake_force_configure' from command line to 'False'
+[0.588s] Level 5:colcon.colcon_core.verb:set package 'sim_microphone_sensor' build argument 'ament_cmake_args' from command line to 'None'
+[0.588s] Level 5:colcon.colcon_core.verb:set package 'sim_microphone_sensor' build argument 'catkin_cmake_args' from command line to 'None'
+[0.588s] Level 5:colcon.colcon_core.verb:set package 'sim_microphone_sensor' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.588s] DEBUG:colcon.colcon_core.verb:Building package 'sim_microphone_sensor' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/anand/whistle_safety_ws/build/sim_microphone_sensor', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/anand/whistle_safety_ws/install/sim_microphone_sensor', 'merge_install': False, 'path': '/home/anand/whistle_safety_ws/src/sim_microphone_sensor', 'symlink_install': True, 'test_result_base': None}
+[0.588s] Level 5:colcon.colcon_core.verb:set package 'whistle_detector' build argument 'cmake_args' from command line to 'None'
+[0.588s] Level 5:colcon.colcon_core.verb:set package 'whistle_detector' build argument 'cmake_target' from command line to 'None'
+[0.588s] Level 5:colcon.colcon_core.verb:set package 'whistle_detector' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.588s] Level 5:colcon.colcon_core.verb:set package 'whistle_detector' build argument 'cmake_clean_cache' from command line to 'False'
+[0.588s] Level 5:colcon.colcon_core.verb:set package 'whistle_detector' build argument 'cmake_clean_first' from command line to 'False'
+[0.588s] Level 5:colcon.colcon_core.verb:set package 'whistle_detector' build argument 'cmake_force_configure' from command line to 'False'
+[0.588s] Level 5:colcon.colcon_core.verb:set package 'whistle_detector' build argument 'ament_cmake_args' from command line to 'None'
+[0.588s] Level 5:colcon.colcon_core.verb:set package 'whistle_detector' build argument 'catkin_cmake_args' from command line to 'None'
+[0.588s] Level 5:colcon.colcon_core.verb:set package 'whistle_detector' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.588s] DEBUG:colcon.colcon_core.verb:Building package 'whistle_detector' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/anand/whistle_safety_ws/build/whistle_detector', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/anand/whistle_safety_ws/install/whistle_detector', 'merge_install': False, 'path': '/home/anand/whistle_safety_ws/src/whistle_detector', 'symlink_install': True, 'test_result_base': None}
+[0.588s] Level 5:colcon.colcon_core.verb:set package 'whistle_nav2_config' build argument 'cmake_args' from command line to 'None'
+[0.588s] Level 5:colcon.colcon_core.verb:set package 'whistle_nav2_config' build argument 'cmake_target' from command line to 'None'
+[0.588s] Level 5:colcon.colcon_core.verb:set package 'whistle_nav2_config' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.588s] Level 5:colcon.colcon_core.verb:set package 'whistle_nav2_config' build argument 'cmake_clean_cache' from command line to 'False'
+[0.588s] Level 5:colcon.colcon_core.verb:set package 'whistle_nav2_config' build argument 'cmake_clean_first' from command line to 'False'
+[0.588s] Level 5:colcon.colcon_core.verb:set package 'whistle_nav2_config' build argument 'cmake_force_configure' from command line to 'False'
+[0.588s] Level 5:colcon.colcon_core.verb:set package 'whistle_nav2_config' build argument 'ament_cmake_args' from command line to 'None'
+[0.588s] Level 5:colcon.colcon_core.verb:set package 'whistle_nav2_config' build argument 'catkin_cmake_args' from command line to 'None'
+[0.588s] Level 5:colcon.colcon_core.verb:set package 'whistle_nav2_config' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.588s] DEBUG:colcon.colcon_core.verb:Building package 'whistle_nav2_config' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/anand/whistle_safety_ws/build/whistle_nav2_config', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/anand/whistle_safety_ws/install/whistle_nav2_config', 'merge_install': False, 'path': '/home/anand/whistle_safety_ws/src/whistle_nav2_config', 'symlink_install': True, 'test_result_base': None}
+[0.589s] Level 5:colcon.colcon_core.verb:set package 'whistle_nav_controller' build argument 'cmake_args' from command line to 'None'
+[0.589s] Level 5:colcon.colcon_core.verb:set package 'whistle_nav_controller' build argument 'cmake_target' from command line to 'None'
+[0.589s] Level 5:colcon.colcon_core.verb:set package 'whistle_nav_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.589s] Level 5:colcon.colcon_core.verb:set package 'whistle_nav_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.589s] Level 5:colcon.colcon_core.verb:set package 'whistle_nav_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.589s] Level 5:colcon.colcon_core.verb:set package 'whistle_nav_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.589s] Level 5:colcon.colcon_core.verb:set package 'whistle_nav_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.589s] Level 5:colcon.colcon_core.verb:set package 'whistle_nav_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.589s] Level 5:colcon.colcon_core.verb:set package 'whistle_nav_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.589s] DEBUG:colcon.colcon_core.verb:Building package 'whistle_nav_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/anand/whistle_safety_ws/build/whistle_nav_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/anand/whistle_safety_ws/install/whistle_nav_controller', 'merge_install': False, 'path': '/home/anand/whistle_safety_ws/src/whistle_nav_controller', 'symlink_install': True, 'test_result_base': None}
+[0.589s] Level 5:colcon.colcon_core.verb:set package 'whistle_robot_description' build argument 'cmake_args' from command line to 'None'
+[0.589s] Level 5:colcon.colcon_core.verb:set package 'whistle_robot_description' build argument 'cmake_target' from command line to 'None'
+[0.589s] Level 5:colcon.colcon_core.verb:set package 'whistle_robot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.589s] Level 5:colcon.colcon_core.verb:set package 'whistle_robot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.589s] Level 5:colcon.colcon_core.verb:set package 'whistle_robot_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.589s] Level 5:colcon.colcon_core.verb:set package 'whistle_robot_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.589s] Level 5:colcon.colcon_core.verb:set package 'whistle_robot_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.589s] Level 5:colcon.colcon_core.verb:set package 'whistle_robot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.589s] Level 5:colcon.colcon_core.verb:set package 'whistle_robot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.589s] DEBUG:colcon.colcon_core.verb:Building package 'whistle_robot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/anand/whistle_safety_ws/build/whistle_robot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/anand/whistle_safety_ws/install/whistle_robot_description', 'merge_install': False, 'path': '/home/anand/whistle_safety_ws/src/whistle_robot_description', 'symlink_install': True, 'test_result_base': None}
+[0.589s] Level 5:colcon.colcon_core.verb:set package 'whistle_safety_msgs' build argument 'cmake_args' from command line to 'None'
+[0.589s] Level 5:colcon.colcon_core.verb:set package 'whistle_safety_msgs' build argument 'cmake_target' from command line to 'None'
+[0.589s] Level 5:colcon.colcon_core.verb:set package 'whistle_safety_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.589s] Level 5:colcon.colcon_core.verb:set package 'whistle_safety_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.589s] Level 5:colcon.colcon_core.verb:set package 'whistle_safety_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.589s] Level 5:colcon.colcon_core.verb:set package 'whistle_safety_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.589s] Level 5:colcon.colcon_core.verb:set package 'whistle_safety_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.589s] Level 5:colcon.colcon_core.verb:set package 'whistle_safety_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.589s] Level 5:colcon.colcon_core.verb:set package 'whistle_safety_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.589s] DEBUG:colcon.colcon_core.verb:Building package 'whistle_safety_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/anand/whistle_safety_ws/build/whistle_safety_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/anand/whistle_safety_ws/install/whistle_safety_msgs', 'merge_install': False, 'path': '/home/anand/whistle_safety_ws/src/whistle_safety_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.590s] Level 5:colcon.colcon_core.verb:set package 'zenoh_bridge' build argument 'cmake_args' from command line to 'None'
+[0.590s] Level 5:colcon.colcon_core.verb:set package 'zenoh_bridge' build argument 'cmake_target' from command line to 'None'
+[0.590s] Level 5:colcon.colcon_core.verb:set package 'zenoh_bridge' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.590s] Level 5:colcon.colcon_core.verb:set package 'zenoh_bridge' build argument 'cmake_clean_cache' from command line to 'False'
+[0.590s] Level 5:colcon.colcon_core.verb:set package 'zenoh_bridge' build argument 'cmake_clean_first' from command line to 'False'
+[0.590s] Level 5:colcon.colcon_core.verb:set package 'zenoh_bridge' build argument 'cmake_force_configure' from command line to 'False'
+[0.590s] Level 5:colcon.colcon_core.verb:set package 'zenoh_bridge' build argument 'ament_cmake_args' from command line to 'None'
+[0.590s] Level 5:colcon.colcon_core.verb:set package 'zenoh_bridge' build argument 'catkin_cmake_args' from command line to 'None'
+[0.590s] Level 5:colcon.colcon_core.verb:set package 'zenoh_bridge' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.590s] DEBUG:colcon.colcon_core.verb:Building package 'zenoh_bridge' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/anand/whistle_safety_ws/build/zenoh_bridge', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/anand/whistle_safety_ws/install/zenoh_bridge', 'merge_install': False, 'path': '/home/anand/whistle_safety_ws/src/zenoh_bridge', 'symlink_install': True, 'test_result_base': None}
+[0.590s] Level 5:colcon.colcon_core.verb:set package 'whistle_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.590s] Level 5:colcon.colcon_core.verb:set package 'whistle_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.590s] Level 5:colcon.colcon_core.verb:set package 'whistle_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.590s] Level 5:colcon.colcon_core.verb:set package 'whistle_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.590s] Level 5:colcon.colcon_core.verb:set package 'whistle_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.590s] Level 5:colcon.colcon_core.verb:set package 'whistle_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.590s] Level 5:colcon.colcon_core.verb:set package 'whistle_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.590s] Level 5:colcon.colcon_core.verb:set package 'whistle_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.590s] Level 5:colcon.colcon_core.verb:set package 'whistle_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.590s] DEBUG:colcon.colcon_core.verb:Building package 'whistle_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/anand/whistle_safety_ws/build/whistle_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/anand/whistle_safety_ws/install/whistle_gazebo', 'merge_install': False, 'path': '/home/anand/whistle_safety_ws/src/whistle_gazebo', 'symlink_install': True, 'test_result_base': None}
+[0.590s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.591s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.592s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/anand/whistle_safety_ws/src/whistle_robot_description' with build type 'ament_cmake'
+[0.592s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/anand/whistle_safety_ws/src/whistle_robot_description'
+[0.594s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.594s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.594s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.598s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/anand/whistle_safety_ws/src/alert_manager'
+[0.599s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.599s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.602s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/anand/whistle_safety_ws/src/sim_microphone_sensor' with build type 'ament_python'
+[0.602s] Level 1:colcon.colcon_core.shell:create_environment_hook('sim_microphone_sensor', 'ament_prefix_path')
+[0.603s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/install/sim_microphone_sensor/share/sim_microphone_sensor/hook/ament_prefix_path.ps1'
+[0.603s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anand/whistle_safety_ws/install/sim_microphone_sensor/share/sim_microphone_sensor/hook/ament_prefix_path.dsv'
+[0.604s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/install/sim_microphone_sensor/share/sim_microphone_sensor/hook/ament_prefix_path.sh'
+[0.605s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.605s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.608s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/anand/whistle_safety_ws/src/whistle_detector'
+[0.609s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.609s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.614s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/anand/whistle_safety_ws/src/whistle_nav2_config' with build type 'ament_cmake'
+[0.614s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/anand/whistle_safety_ws/src/whistle_nav2_config'
+[0.615s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.615s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.618s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/anand/whistle_safety_ws/src/whistle_nav_controller' with build type 'ament_python'
+[0.618s] Level 1:colcon.colcon_core.shell:create_environment_hook('whistle_nav_controller', 'ament_prefix_path')
+[0.618s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/install/whistle_nav_controller/share/whistle_nav_controller/hook/ament_prefix_path.ps1'
+[0.619s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anand/whistle_safety_ws/install/whistle_nav_controller/share/whistle_nav_controller/hook/ament_prefix_path.dsv'
+[0.619s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/install/whistle_nav_controller/share/whistle_nav_controller/hook/ament_prefix_path.sh'
+[0.619s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.619s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.622s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/anand/whistle_safety_ws/src/whistle_safety_msgs' with build type 'ament_cmake'
+[0.622s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/anand/whistle_safety_ws/src/whistle_safety_msgs'
+[0.623s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.623s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.626s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/anand/whistle_safety_ws/src/zenoh_bridge'
+[0.627s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.627s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.638s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anand/whistle_safety_ws/build/whistle_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anand/whistle_safety_ws/install/zenoh_bridge:/home/anand/whistle_safety_ws/install/alert_manager:/home/anand/whistle_safety_ws/install/whistle_detector:/opt/ros/humble /usr/bin/cmake --build /home/anand/whistle_safety_ws/build/whistle_robot_description -- -j16 -l16
+[1.024s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/anand/whistle_safety_ws/src/sim_microphone_sensor'
+[1.024s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.024s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.190s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anand/whistle_safety_ws/build/whistle_nav2_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anand/whistle_safety_ws/install/zenoh_bridge:/home/anand/whistle_safety_ws/install/alert_manager:/home/anand/whistle_safety_ws/install/whistle_detector:/opt/ros/humble /usr/bin/cmake /home/anand/whistle_safety_ws/src/whistle_nav2_config -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/anand/whistle_safety_ws/install/whistle_nav2_config
+[1.393s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/anand/whistle_safety_ws/src/whistle_nav_controller'
+[1.394s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.394s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.403s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anand/whistle_safety_ws/build/whistle_safety_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anand/whistle_safety_ws/install/zenoh_bridge:/home/anand/whistle_safety_ws/install/alert_manager:/home/anand/whistle_safety_ws/install/whistle_detector:/opt/ros/humble /usr/bin/cmake --build /home/anand/whistle_safety_ws/build/whistle_safety_msgs -- -j16 -l16
+[1.613s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anand/whistle_safety_ws/build/whistle_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anand/whistle_safety_ws/install/zenoh_bridge:/home/anand/whistle_safety_ws/install/alert_manager:/home/anand/whistle_safety_ws/install/whistle_detector:/opt/ros/humble /usr/bin/cmake --build /home/anand/whistle_safety_ws/build/whistle_robot_description -- -j16 -l16
+[1.625s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anand/whistle_safety_ws/build/whistle_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anand/whistle_safety_ws/install/zenoh_bridge:/home/anand/whistle_safety_ws/install/alert_manager:/home/anand/whistle_safety_ws/install/whistle_detector:/opt/ros/humble /usr/bin/cmake --install /home/anand/whistle_safety_ws/build/whistle_robot_description
+[1.629s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anand/whistle_safety_ws/build/alert_manager': PYTHONPATH=/home/anand/whistle_safety_ws/build/alert_manager/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anand/whistle_safety_ws/install/alert_manager/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/anand/whistle_safety_ws/build/alert_manager/build --no-deps symlink_data
+[1.655s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(whistle_robot_description)
+[1.655s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anand/whistle_safety_ws/build/whistle_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anand/whistle_safety_ws/install/zenoh_bridge:/home/anand/whistle_safety_ws/install/alert_manager:/home/anand/whistle_safety_ws/install/whistle_detector:/opt/ros/humble /usr/bin/cmake --install /home/anand/whistle_safety_ws/build/whistle_robot_description
+[1.657s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_robot_description' for CMake module files
+[1.658s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_robot_description' for CMake config files
+[1.658s] Level 1:colcon.colcon_core.shell:create_environment_hook('whistle_robot_description', 'cmake_prefix_path')
+[1.659s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/hook/cmake_prefix_path.ps1'
+[1.659s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/hook/cmake_prefix_path.dsv'
+[1.660s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/hook/cmake_prefix_path.sh'
+[1.661s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_robot_description/bin'
+[1.662s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_robot_description/lib/pkgconfig/whistle_robot_description.pc'
+[1.662s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_robot_description/lib/python3.10/site-packages'
+[1.662s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_robot_description/bin'
+[1.663s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/package.ps1'
+[1.664s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/package.dsv'
+[1.665s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/package.sh'
+[1.666s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/package.bash'
+[1.666s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/package.zsh'
+[1.667s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anand/whistle_safety_ws/install/whistle_robot_description/share/colcon-core/packages/whistle_robot_description)
+[1.667s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(whistle_robot_description)
+[1.668s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_robot_description' for CMake module files
+[1.668s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_robot_description' for CMake config files
+[1.668s] Level 1:colcon.colcon_core.shell:create_environment_hook('whistle_robot_description', 'cmake_prefix_path')
+[1.669s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/hook/cmake_prefix_path.ps1'
+[1.669s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/hook/cmake_prefix_path.dsv'
+[1.670s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/hook/cmake_prefix_path.sh'
+[1.670s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_robot_description/bin'
+[1.670s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_robot_description/lib/pkgconfig/whistle_robot_description.pc'
+[1.671s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_robot_description/lib/python3.10/site-packages'
+[1.671s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_robot_description/bin'
+[1.671s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/package.ps1'
+[1.672s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/package.dsv'
+[1.672s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/package.sh'
+[1.673s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/package.bash'
+[1.673s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_robot_description/share/whistle_robot_description/package.zsh'
+[1.673s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anand/whistle_safety_ws/install/whistle_robot_description/share/colcon-core/packages/whistle_robot_description)
+[1.674s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/anand/whistle_safety_ws/src/whistle_gazebo' with build type 'ament_cmake'
+[1.674s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/anand/whistle_safety_ws/src/whistle_gazebo'
+[1.674s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.674s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.687s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anand/whistle_safety_ws/build/whistle_gazebo': AMENT_PREFIX_PATH=/home/anand/whistle_safety_ws/install/whistle_robot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/anand/whistle_safety_ws/install/whistle_robot_description:/home/anand/microros_ws/install/micro_ros_setup:/home/anand/microros_ws/install/micro_ros_agent:/home/anand/microros_ws/install/micro_ros_msgs:/home/anand/rebel_ws/install/myrobot_moveit_config:/home/anand/rebel_ws/install/igus_rebel_description:/home/anand/whistle_safety_ws/install/zenoh_bridge:/home/anand/whistle_safety_ws/install/alert_manager:/home/anand/whistle_safety_ws/install/whistle_detector:/opt/ros/humble /usr/bin/cmake --build /home/anand/whistle_safety_ws/build/whistle_gazebo -- -j16 -l16
+[1.733s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anand/whistle_safety_ws/build/whistle_gazebo' returned '0': AMENT_PREFIX_PATH=/home/anand/whistle_safety_ws/install/whistle_robot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/anand/whistle_safety_ws/install/whistle_robot_description:/home/anand/microros_ws/install/micro_ros_setup:/home/anand/microros_ws/install/micro_ros_agent:/home/anand/microros_ws/install/micro_ros_msgs:/home/anand/rebel_ws/install/myrobot_moveit_config:/home/anand/rebel_ws/install/igus_rebel_description:/home/anand/whistle_safety_ws/install/zenoh_bridge:/home/anand/whistle_safety_ws/install/alert_manager:/home/anand/whistle_safety_ws/install/whistle_detector:/opt/ros/humble /usr/bin/cmake --build /home/anand/whistle_safety_ws/build/whistle_gazebo -- -j16 -l16
+[1.735s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anand/whistle_safety_ws/build/whistle_gazebo': AMENT_PREFIX_PATH=/home/anand/whistle_safety_ws/install/whistle_robot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/anand/whistle_safety_ws/install/whistle_robot_description:/home/anand/microros_ws/install/micro_ros_setup:/home/anand/microros_ws/install/micro_ros_agent:/home/anand/microros_ws/install/micro_ros_msgs:/home/anand/rebel_ws/install/myrobot_moveit_config:/home/anand/rebel_ws/install/igus_rebel_description:/home/anand/whistle_safety_ws/install/zenoh_bridge:/home/anand/whistle_safety_ws/install/alert_manager:/home/anand/whistle_safety_ws/install/whistle_detector:/opt/ros/humble /usr/bin/cmake --install /home/anand/whistle_safety_ws/build/whistle_gazebo
+[1.737s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/anand/whistle_safety_ws/install/whistle_detector/share/ament_index/resource_index/packages/whistle_detector
+[1.737s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/anand/whistle_safety_ws/install/whistle_detector/share/whistle_detector/package.xml
+[1.737s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/anand/whistle_safety_ws/install/whistle_detector/share/whistle_detector/launch/whistle_detector.launch.py
+[1.737s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/anand/whistle_safety_ws/install/whistle_detector/share/whistle_detector/config/detector_params.yaml
+[1.737s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/anand/whistle_safety_ws/install/whistle_detector/lib/whistle_detector/autonomous_responder
+[1.737s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/anand/whistle_safety_ws/install/whistle_detector/lib/whistle_detector/whistle_detector_node
+[1.740s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anand/whistle_safety_ws/build/whistle_detector': PYTHONPATH=/home/anand/whistle_safety_ws/build/whistle_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anand/whistle_safety_ws/install/whistle_detector/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/anand/whistle_safety_ws/build/whistle_detector/build --no-deps symlink_data --force
+[1.756s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(whistle_gazebo)
+[1.756s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_gazebo' for CMake module files
+[1.757s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anand/whistle_safety_ws/build/whistle_gazebo' returned '0': AMENT_PREFIX_PATH=/home/anand/whistle_safety_ws/install/whistle_robot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/anand/whistle_safety_ws/install/whistle_robot_description:/home/anand/microros_ws/install/micro_ros_setup:/home/anand/microros_ws/install/micro_ros_agent:/home/anand/microros_ws/install/micro_ros_msgs:/home/anand/rebel_ws/install/myrobot_moveit_config:/home/anand/rebel_ws/install/igus_rebel_description:/home/anand/whistle_safety_ws/install/zenoh_bridge:/home/anand/whistle_safety_ws/install/alert_manager:/home/anand/whistle_safety_ws/install/whistle_detector:/opt/ros/humble /usr/bin/cmake --install /home/anand/whistle_safety_ws/build/whistle_gazebo
+[1.757s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_gazebo' for CMake config files
+[1.758s] Level 1:colcon.colcon_core.shell:create_environment_hook('whistle_gazebo', 'cmake_prefix_path')
+[1.758s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/install/whistle_gazebo/share/whistle_gazebo/hook/cmake_prefix_path.ps1'
+[1.759s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anand/whistle_safety_ws/install/whistle_gazebo/share/whistle_gazebo/hook/cmake_prefix_path.dsv'
+[1.759s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/install/whistle_gazebo/share/whistle_gazebo/hook/cmake_prefix_path.sh'
+[1.760s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_gazebo/bin'
+[1.760s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_gazebo/lib/pkgconfig/whistle_gazebo.pc'
+[1.760s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_gazebo/lib/python3.10/site-packages'
+[1.761s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_gazebo/bin'
+[1.761s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_gazebo/share/whistle_gazebo/package.ps1'
+[1.762s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anand/whistle_safety_ws/install/whistle_gazebo/share/whistle_gazebo/package.dsv'
+[1.763s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_gazebo/share/whistle_gazebo/package.sh'
+[1.763s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_gazebo/share/whistle_gazebo/package.bash'
+[1.764s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_gazebo/share/whistle_gazebo/package.zsh'
+[1.764s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anand/whistle_safety_ws/install/whistle_gazebo/share/colcon-core/packages/whistle_gazebo)
+[1.765s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(whistle_gazebo)
+[1.766s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_gazebo' for CMake module files
+[1.766s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_gazebo' for CMake config files
+[1.767s] Level 1:colcon.colcon_core.shell:create_environment_hook('whistle_gazebo', 'cmake_prefix_path')
+[1.767s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/install/whistle_gazebo/share/whistle_gazebo/hook/cmake_prefix_path.ps1'
+[1.767s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anand/whistle_safety_ws/install/whistle_gazebo/share/whistle_gazebo/hook/cmake_prefix_path.dsv'
+[1.768s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/install/whistle_gazebo/share/whistle_gazebo/hook/cmake_prefix_path.sh'
+[1.768s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_gazebo/bin'
+[1.768s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_gazebo/lib/pkgconfig/whistle_gazebo.pc'
+[1.769s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_gazebo/lib/python3.10/site-packages'
+[1.769s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_gazebo/bin'
+[1.770s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_gazebo/share/whistle_gazebo/package.ps1'
+[1.770s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anand/whistle_safety_ws/install/whistle_gazebo/share/whistle_gazebo/package.dsv'
+[1.771s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_gazebo/share/whistle_gazebo/package.sh'
+[1.771s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_gazebo/share/whistle_gazebo/package.bash'
+[1.772s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_gazebo/share/whistle_gazebo/package.zsh'
+[1.773s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anand/whistle_safety_ws/install/whistle_gazebo/share/colcon-core/packages/whistle_gazebo)
+[1.890s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anand/whistle_safety_ws/build/whistle_safety_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anand/whistle_safety_ws/install/zenoh_bridge:/home/anand/whistle_safety_ws/install/alert_manager:/home/anand/whistle_safety_ws/install/whistle_detector:/opt/ros/humble /usr/bin/cmake --build /home/anand/whistle_safety_ws/build/whistle_safety_msgs -- -j16 -l16
+[1.895s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anand/whistle_safety_ws/build/whistle_safety_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anand/whistle_safety_ws/install/zenoh_bridge:/home/anand/whistle_safety_ws/install/alert_manager:/home/anand/whistle_safety_ws/install/whistle_detector:/opt/ros/humble /usr/bin/cmake --install /home/anand/whistle_safety_ws/build/whistle_safety_msgs
+[1.972s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(whistle_safety_msgs)
+[1.973s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_safety_msgs' for CMake module files
+[1.974s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anand/whistle_safety_ws/build/whistle_safety_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anand/whistle_safety_ws/install/zenoh_bridge:/home/anand/whistle_safety_ws/install/alert_manager:/home/anand/whistle_safety_ws/install/whistle_detector:/opt/ros/humble /usr/bin/cmake --install /home/anand/whistle_safety_ws/build/whistle_safety_msgs
+[1.975s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_safety_msgs' for CMake config files
+[1.975s] Level 1:colcon.colcon_core.shell:create_environment_hook('whistle_safety_msgs', 'cmake_prefix_path')
+[1.976s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/install/whistle_safety_msgs/share/whistle_safety_msgs/hook/cmake_prefix_path.ps1'
+[1.976s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anand/whistle_safety_ws/install/whistle_safety_msgs/share/whistle_safety_msgs/hook/cmake_prefix_path.dsv'
+[1.977s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/install/whistle_safety_msgs/share/whistle_safety_msgs/hook/cmake_prefix_path.sh'
+[1.978s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_safety_msgs/lib'
+[1.978s] Level 1:colcon.colcon_core.shell:create_environment_hook('whistle_safety_msgs', 'ld_library_path_lib')
+[1.978s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/install/whistle_safety_msgs/share/whistle_safety_msgs/hook/ld_library_path_lib.ps1'
+[1.979s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anand/whistle_safety_ws/install/whistle_safety_msgs/share/whistle_safety_msgs/hook/ld_library_path_lib.dsv'
+[1.979s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/install/whistle_safety_msgs/share/whistle_safety_msgs/hook/ld_library_path_lib.sh'
+[1.979s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_safety_msgs/bin'
+[1.979s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_safety_msgs/lib/pkgconfig/whistle_safety_msgs.pc'
+[1.979s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_safety_msgs/lib/python3.10/site-packages'
+[1.980s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_safety_msgs/bin'
+[1.980s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_safety_msgs/share/whistle_safety_msgs/package.ps1'
+[1.981s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anand/whistle_safety_ws/install/whistle_safety_msgs/share/whistle_safety_msgs/package.dsv'
+[1.981s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_safety_msgs/share/whistle_safety_msgs/package.sh'
+[1.981s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_safety_msgs/share/whistle_safety_msgs/package.bash'
+[1.981s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_safety_msgs/share/whistle_safety_msgs/package.zsh'
+[1.982s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anand/whistle_safety_ws/install/whistle_safety_msgs/share/colcon-core/packages/whistle_safety_msgs)
+[1.982s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(whistle_safety_msgs)
+[1.982s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_safety_msgs' for CMake module files
+[1.983s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_safety_msgs' for CMake config files
+[1.983s] Level 1:colcon.colcon_core.shell:create_environment_hook('whistle_safety_msgs', 'cmake_prefix_path')
+[1.983s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/install/whistle_safety_msgs/share/whistle_safety_msgs/hook/cmake_prefix_path.ps1'
+[1.984s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anand/whistle_safety_ws/install/whistle_safety_msgs/share/whistle_safety_msgs/hook/cmake_prefix_path.dsv'
+[1.984s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/install/whistle_safety_msgs/share/whistle_safety_msgs/hook/cmake_prefix_path.sh'
+[1.985s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_safety_msgs/lib'
+[1.985s] Level 1:colcon.colcon_core.shell:create_environment_hook('whistle_safety_msgs', 'ld_library_path_lib')
+[1.985s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/install/whistle_safety_msgs/share/whistle_safety_msgs/hook/ld_library_path_lib.ps1'
+[1.985s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anand/whistle_safety_ws/install/whistle_safety_msgs/share/whistle_safety_msgs/hook/ld_library_path_lib.dsv'
+[1.986s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/install/whistle_safety_msgs/share/whistle_safety_msgs/hook/ld_library_path_lib.sh'
+[1.986s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_safety_msgs/bin'
+[1.986s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_safety_msgs/lib/pkgconfig/whistle_safety_msgs.pc'
+[1.986s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_safety_msgs/lib/python3.10/site-packages'
+[1.986s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_safety_msgs/bin'
+[1.987s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_safety_msgs/share/whistle_safety_msgs/package.ps1'
+[1.987s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anand/whistle_safety_ws/install/whistle_safety_msgs/share/whistle_safety_msgs/package.dsv'
+[1.988s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_safety_msgs/share/whistle_safety_msgs/package.sh'
+[1.988s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_safety_msgs/share/whistle_safety_msgs/package.bash'
+[1.989s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_safety_msgs/share/whistle_safety_msgs/package.zsh'
+[1.990s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anand/whistle_safety_ws/install/whistle_safety_msgs/share/colcon-core/packages/whistle_safety_msgs)
+[2.113s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anand/whistle_safety_ws/build/whistle_nav_controller': PYTHONPATH=/home/anand/whistle_safety_ws/build/whistle_nav_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anand/whistle_safety_ws/install/whistle_nav_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/anand/whistle_safety_ws/build/whistle_nav_controller/build --no-deps symlink_data
+[2.178s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anand/whistle_safety_ws/build/zenoh_bridge': PYTHONPATH=/home/anand/whistle_safety_ws/build/zenoh_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anand/whistle_safety_ws/install/zenoh_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/anand/whistle_safety_ws/build/zenoh_bridge/build --no-deps symlink_data
+[2.338s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anand/whistle_safety_ws/build/whistle_nav2_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anand/whistle_safety_ws/install/zenoh_bridge:/home/anand/whistle_safety_ws/install/alert_manager:/home/anand/whistle_safety_ws/install/whistle_detector:/opt/ros/humble /usr/bin/cmake /home/anand/whistle_safety_ws/src/whistle_nav2_config -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/anand/whistle_safety_ws/install/whistle_nav2_config
+[2.339s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anand/whistle_safety_ws/build/whistle_nav2_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anand/whistle_safety_ws/install/zenoh_bridge:/home/anand/whistle_safety_ws/install/alert_manager:/home/anand/whistle_safety_ws/install/whistle_detector:/opt/ros/humble /usr/bin/cmake --build /home/anand/whistle_safety_ws/build/whistle_nav2_config -- -j16 -l16
+[2.367s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anand/whistle_safety_ws/build/sim_microphone_sensor': PYTHONPATH=/home/anand/whistle_safety_ws/build/sim_microphone_sensor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anand/whistle_safety_ws/install/sim_microphone_sensor/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/anand/whistle_safety_ws/build/sim_microphone_sensor/build --no-deps symlink_data
+[2.381s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anand/whistle_safety_ws/build/whistle_nav2_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anand/whistle_safety_ws/install/zenoh_bridge:/home/anand/whistle_safety_ws/install/alert_manager:/home/anand/whistle_safety_ws/install/whistle_detector:/opt/ros/humble /usr/bin/cmake --build /home/anand/whistle_safety_ws/build/whistle_nav2_config -- -j16 -l16
+[2.382s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anand/whistle_safety_ws/build/whistle_nav2_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anand/whistle_safety_ws/install/zenoh_bridge:/home/anand/whistle_safety_ws/install/alert_manager:/home/anand/whistle_safety_ws/install/whistle_detector:/opt/ros/humble /usr/bin/cmake --install /home/anand/whistle_safety_ws/build/whistle_nav2_config
+[2.451s] Level 1:colcon.colcon_core.shell:create_environment_hook('alert_manager', 'pythonpath_develop')
+[2.451s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/build/alert_manager/share/alert_manager/hook/pythonpath_develop.ps1'
+[2.452s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anand/whistle_safety_ws/build/alert_manager' returned '0': PYTHONPATH=/home/anand/whistle_safety_ws/build/alert_manager/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anand/whistle_safety_ws/install/alert_manager/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/anand/whistle_safety_ws/build/alert_manager/build --no-deps symlink_data
+[2.452s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anand/whistle_safety_ws/build/alert_manager/share/alert_manager/hook/pythonpath_develop.dsv'
+[2.453s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/build/alert_manager/share/alert_manager/hook/pythonpath_develop.sh'
+[2.455s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/alert_manager' for CMake module files
+[2.455s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/alert_manager' for CMake config files
+[2.456s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/alert_manager/lib'
+[2.456s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/alert_manager/bin'
+[2.456s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/alert_manager/lib/pkgconfig/alert_manager.pc'
+[2.457s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/alert_manager/lib/python3.10/site-packages'
+[2.457s] Level 1:colcon.colcon_core.shell:create_environment_hook('alert_manager', 'pythonpath')
+[2.457s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/install/alert_manager/share/alert_manager/hook/pythonpath.ps1'
+[2.458s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anand/whistle_safety_ws/install/alert_manager/share/alert_manager/hook/pythonpath.dsv'
+[2.458s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/install/alert_manager/share/alert_manager/hook/pythonpath.sh'
+[2.460s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/alert_manager/bin'
+[2.460s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(alert_manager)
+[2.461s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/alert_manager/share/alert_manager/package.ps1'
+[2.462s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anand/whistle_safety_ws/install/alert_manager/share/alert_manager/package.dsv'
+[2.463s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/alert_manager/share/alert_manager/package.sh'
+[2.463s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/alert_manager/share/alert_manager/package.bash'
+[2.464s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/alert_manager/share/alert_manager/package.zsh'
+[2.465s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anand/whistle_safety_ws/install/alert_manager/share/colcon-core/packages/alert_manager)
+[2.545s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(whistle_nav2_config)
+[2.546s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_nav2_config' for CMake module files
+[2.546s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anand/whistle_safety_ws/build/whistle_nav2_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anand/whistle_safety_ws/install/zenoh_bridge:/home/anand/whistle_safety_ws/install/alert_manager:/home/anand/whistle_safety_ws/install/whistle_detector:/opt/ros/humble /usr/bin/cmake --install /home/anand/whistle_safety_ws/build/whistle_nav2_config
+[2.547s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_nav2_config' for CMake config files
+[2.547s] Level 1:colcon.colcon_core.shell:create_environment_hook('whistle_nav2_config', 'cmake_prefix_path')
+[2.547s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/install/whistle_nav2_config/share/whistle_nav2_config/hook/cmake_prefix_path.ps1'
+[2.548s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anand/whistle_safety_ws/install/whistle_nav2_config/share/whistle_nav2_config/hook/cmake_prefix_path.dsv'
+[2.548s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/install/whistle_nav2_config/share/whistle_nav2_config/hook/cmake_prefix_path.sh'
+[2.549s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_nav2_config/bin'
+[2.549s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_nav2_config/lib/pkgconfig/whistle_nav2_config.pc'
+[2.549s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_nav2_config/lib/python3.10/site-packages'
+[2.549s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_nav2_config/bin'
+[2.550s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_nav2_config/share/whistle_nav2_config/package.ps1'
+[2.550s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anand/whistle_safety_ws/install/whistle_nav2_config/share/whistle_nav2_config/package.dsv'
+[2.551s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_nav2_config/share/whistle_nav2_config/package.sh'
+[2.551s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_nav2_config/share/whistle_nav2_config/package.bash'
+[2.551s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_nav2_config/share/whistle_nav2_config/package.zsh'
+[2.551s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anand/whistle_safety_ws/install/whistle_nav2_config/share/colcon-core/packages/whistle_nav2_config)
+[2.552s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(whistle_nav2_config)
+[2.552s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_nav2_config' for CMake module files
+[2.552s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_nav2_config' for CMake config files
+[2.552s] Level 1:colcon.colcon_core.shell:create_environment_hook('whistle_nav2_config', 'cmake_prefix_path')
+[2.553s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/install/whistle_nav2_config/share/whistle_nav2_config/hook/cmake_prefix_path.ps1'
+[2.553s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anand/whistle_safety_ws/install/whistle_nav2_config/share/whistle_nav2_config/hook/cmake_prefix_path.dsv'
+[2.553s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/install/whistle_nav2_config/share/whistle_nav2_config/hook/cmake_prefix_path.sh'
+[2.554s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_nav2_config/bin'
+[2.554s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_nav2_config/lib/pkgconfig/whistle_nav2_config.pc'
+[2.554s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_nav2_config/lib/python3.10/site-packages'
+[2.554s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_nav2_config/bin'
+[2.555s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_nav2_config/share/whistle_nav2_config/package.ps1'
+[2.555s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anand/whistle_safety_ws/install/whistle_nav2_config/share/whistle_nav2_config/package.dsv'
+[2.556s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_nav2_config/share/whistle_nav2_config/package.sh'
+[2.556s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_nav2_config/share/whistle_nav2_config/package.bash'
+[2.557s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_nav2_config/share/whistle_nav2_config/package.zsh'
+[2.557s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anand/whistle_safety_ws/install/whistle_nav2_config/share/colcon-core/packages/whistle_nav2_config)
+[2.629s] Level 1:colcon.colcon_core.shell:create_environment_hook('whistle_detector', 'pythonpath_develop')
+[2.630s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/build/whistle_detector/share/whistle_detector/hook/pythonpath_develop.ps1'
+[2.631s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anand/whistle_safety_ws/build/whistle_detector' returned '0': PYTHONPATH=/home/anand/whistle_safety_ws/build/whistle_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anand/whistle_safety_ws/install/whistle_detector/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/anand/whistle_safety_ws/build/whistle_detector/build --no-deps symlink_data --force
+[2.631s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anand/whistle_safety_ws/build/whistle_detector/share/whistle_detector/hook/pythonpath_develop.dsv'
+[2.632s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/build/whistle_detector/share/whistle_detector/hook/pythonpath_develop.sh'
+[2.633s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_detector' for CMake module files
+[2.634s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_detector' for CMake config files
+[2.634s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_detector/lib'
+[2.634s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_detector/bin'
+[2.635s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_detector/lib/pkgconfig/whistle_detector.pc'
+[2.635s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_detector/lib/python3.10/site-packages'
+[2.635s] Level 1:colcon.colcon_core.shell:create_environment_hook('whistle_detector', 'pythonpath')
+[2.635s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/install/whistle_detector/share/whistle_detector/hook/pythonpath.ps1'
+[2.636s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anand/whistle_safety_ws/install/whistle_detector/share/whistle_detector/hook/pythonpath.dsv'
+[2.637s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/install/whistle_detector/share/whistle_detector/hook/pythonpath.sh'
+[2.638s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_detector/bin'
+[2.638s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(whistle_detector)
+[2.638s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_detector/share/whistle_detector/package.ps1'
+[2.639s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anand/whistle_safety_ws/install/whistle_detector/share/whistle_detector/package.dsv'
+[2.640s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_detector/share/whistle_detector/package.sh'
+[2.642s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_detector/share/whistle_detector/package.bash'
+[2.642s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_detector/share/whistle_detector/package.zsh'
+[2.643s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anand/whistle_safety_ws/install/whistle_detector/share/colcon-core/packages/whistle_detector)
+[2.829s] Level 1:colcon.colcon_core.shell:create_environment_hook('zenoh_bridge', 'pythonpath_develop')
+[2.830s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anand/whistle_safety_ws/build/zenoh_bridge' returned '0': PYTHONPATH=/home/anand/whistle_safety_ws/build/zenoh_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anand/whistle_safety_ws/install/zenoh_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/anand/whistle_safety_ws/build/zenoh_bridge/build --no-deps symlink_data
+[2.830s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/build/zenoh_bridge/share/zenoh_bridge/hook/pythonpath_develop.ps1'
+[2.831s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anand/whistle_safety_ws/build/zenoh_bridge/share/zenoh_bridge/hook/pythonpath_develop.dsv'
+[2.831s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/build/zenoh_bridge/share/zenoh_bridge/hook/pythonpath_develop.sh'
+[2.832s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/zenoh_bridge' for CMake module files
+[2.832s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/zenoh_bridge' for CMake config files
+[2.832s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/zenoh_bridge/lib'
+[2.832s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/zenoh_bridge/bin'
+[2.832s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/zenoh_bridge/lib/pkgconfig/zenoh_bridge.pc'
+[2.833s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/zenoh_bridge/lib/python3.10/site-packages'
+[2.833s] Level 1:colcon.colcon_core.shell:create_environment_hook('zenoh_bridge', 'pythonpath')
+[2.833s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/install/zenoh_bridge/share/zenoh_bridge/hook/pythonpath.ps1'
+[2.833s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anand/whistle_safety_ws/install/zenoh_bridge/share/zenoh_bridge/hook/pythonpath.dsv'
+[2.833s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/install/zenoh_bridge/share/zenoh_bridge/hook/pythonpath.sh'
+[2.834s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/zenoh_bridge/bin'
+[2.834s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(zenoh_bridge)
+[2.834s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/zenoh_bridge/share/zenoh_bridge/package.ps1'
+[2.835s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anand/whistle_safety_ws/install/zenoh_bridge/share/zenoh_bridge/package.dsv'
+[2.835s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/zenoh_bridge/share/zenoh_bridge/package.sh'
+[2.835s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/zenoh_bridge/share/zenoh_bridge/package.bash'
+[2.835s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/zenoh_bridge/share/zenoh_bridge/package.zsh'
+[2.836s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anand/whistle_safety_ws/install/zenoh_bridge/share/colcon-core/packages/zenoh_bridge)
+[3.009s] Level 1:colcon.colcon_core.shell:create_environment_hook('whistle_nav_controller', 'pythonpath_develop')
+[3.010s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/build/whistle_nav_controller/share/whistle_nav_controller/hook/pythonpath_develop.ps1'
+[3.011s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anand/whistle_safety_ws/build/whistle_nav_controller' returned '0': PYTHONPATH=/home/anand/whistle_safety_ws/build/whistle_nav_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anand/whistle_safety_ws/install/whistle_nav_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/anand/whistle_safety_ws/build/whistle_nav_controller/build --no-deps symlink_data
+[3.012s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anand/whistle_safety_ws/build/whistle_nav_controller/share/whistle_nav_controller/hook/pythonpath_develop.dsv'
+[3.012s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/build/whistle_nav_controller/share/whistle_nav_controller/hook/pythonpath_develop.sh'
+[3.013s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_nav_controller' for CMake module files
+[3.014s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_nav_controller' for CMake config files
+[3.015s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_nav_controller/lib'
+[3.015s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_nav_controller/bin'
+[3.015s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_nav_controller/lib/pkgconfig/whistle_nav_controller.pc'
+[3.015s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_nav_controller/lib/python3.10/site-packages'
+[3.015s] Level 1:colcon.colcon_core.shell:create_environment_hook('whistle_nav_controller', 'pythonpath')
+[3.016s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/install/whistle_nav_controller/share/whistle_nav_controller/hook/pythonpath.ps1'
+[3.016s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anand/whistle_safety_ws/install/whistle_nav_controller/share/whistle_nav_controller/hook/pythonpath.dsv'
+[3.017s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/install/whistle_nav_controller/share/whistle_nav_controller/hook/pythonpath.sh'
+[3.018s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/whistle_nav_controller/bin'
+[3.018s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(whistle_nav_controller)
+[3.018s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_nav_controller/share/whistle_nav_controller/package.ps1'
+[3.019s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anand/whistle_safety_ws/install/whistle_nav_controller/share/whistle_nav_controller/package.dsv'
+[3.019s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_nav_controller/share/whistle_nav_controller/package.sh'
+[3.019s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_nav_controller/share/whistle_nav_controller/package.bash'
+[3.020s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/whistle_nav_controller/share/whistle_nav_controller/package.zsh'
+[3.020s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anand/whistle_safety_ws/install/whistle_nav_controller/share/colcon-core/packages/whistle_nav_controller)
+[3.036s] Level 1:colcon.colcon_core.shell:create_environment_hook('sim_microphone_sensor', 'pythonpath_develop')
+[3.037s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/build/sim_microphone_sensor/share/sim_microphone_sensor/hook/pythonpath_develop.ps1'
+[3.037s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anand/whistle_safety_ws/build/sim_microphone_sensor' returned '0': PYTHONPATH=/home/anand/whistle_safety_ws/build/sim_microphone_sensor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anand/whistle_safety_ws/install/sim_microphone_sensor/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/anand/whistle_safety_ws/build/sim_microphone_sensor/build --no-deps symlink_data
+[3.038s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anand/whistle_safety_ws/build/sim_microphone_sensor/share/sim_microphone_sensor/hook/pythonpath_develop.dsv'
+[3.038s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/build/sim_microphone_sensor/share/sim_microphone_sensor/hook/pythonpath_develop.sh'
+[3.039s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/sim_microphone_sensor' for CMake module files
+[3.040s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/sim_microphone_sensor' for CMake config files
+[3.040s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/sim_microphone_sensor/lib'
+[3.041s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/sim_microphone_sensor/bin'
+[3.041s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/sim_microphone_sensor/lib/pkgconfig/sim_microphone_sensor.pc'
+[3.041s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/sim_microphone_sensor/lib/python3.10/site-packages'
+[3.041s] Level 1:colcon.colcon_core.shell:create_environment_hook('sim_microphone_sensor', 'pythonpath')
+[3.041s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/install/sim_microphone_sensor/share/sim_microphone_sensor/hook/pythonpath.ps1'
+[3.042s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anand/whistle_safety_ws/install/sim_microphone_sensor/share/sim_microphone_sensor/hook/pythonpath.dsv'
+[3.042s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anand/whistle_safety_ws/install/sim_microphone_sensor/share/sim_microphone_sensor/hook/pythonpath.sh'
+[3.044s] Level 1:colcon.colcon_core.environment:checking '/home/anand/whistle_safety_ws/install/sim_microphone_sensor/bin'
+[3.044s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sim_microphone_sensor)
+[3.044s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/sim_microphone_sensor/share/sim_microphone_sensor/package.ps1'
+[3.045s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anand/whistle_safety_ws/install/sim_microphone_sensor/share/sim_microphone_sensor/package.dsv'
+[3.046s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/sim_microphone_sensor/share/sim_microphone_sensor/package.sh'
+[3.046s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/sim_microphone_sensor/share/sim_microphone_sensor/package.bash'
+[3.047s] INFO:colcon.colcon_core.shell:Creating package script '/home/anand/whistle_safety_ws/install/sim_microphone_sensor/share/sim_microphone_sensor/package.zsh'
+[3.047s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anand/whistle_safety_ws/install/sim_microphone_sensor/share/colcon-core/packages/sim_microphone_sensor)
+[3.047s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.048s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.048s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.048s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.054s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.054s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.055s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.064s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.064s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/anand/whistle_safety_ws/install/local_setup.ps1'
+[3.065s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/anand/whistle_safety_ws/install/_local_setup_util_ps1.py'
+[3.067s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/anand/whistle_safety_ws/install/setup.ps1'
+[3.069s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/anand/whistle_safety_ws/install/local_setup.sh'
+[3.069s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/anand/whistle_safety_ws/install/_local_setup_util_sh.py'
+[3.070s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/anand/whistle_safety_ws/install/setup.sh'
+[3.072s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/anand/whistle_safety_ws/install/local_setup.bash'
+[3.073s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/anand/whistle_safety_ws/install/setup.bash'
+[3.075s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/anand/whistle_safety_ws/install/local_setup.zsh'
+[3.076s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/anand/whistle_safety_ws/install/setup.zsh'

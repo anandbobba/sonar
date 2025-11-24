@@ -1,0 +1,28 @@
+[1.056s] Invoking command in '/home/anand/whistle_safety_ws/build/sim_microphone_sensor': PYTHONPATH=/home/anand/whistle_safety_ws/build/sim_microphone_sensor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anand/whistle_safety_ws/install/sim_microphone_sensor/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/anand/whistle_safety_ws/build/sim_microphone_sensor/build --no-deps symlink_data
+[1.186s] /home/anand/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[1.186s]   warnings.warn(msg)
+[1.375s] running develop
+[1.698s] running egg_info
+[1.708s] creating sim_microphone_sensor.egg-info
+[1.708s] writing sim_microphone_sensor.egg-info/PKG-INFO
+[1.709s] writing dependency_links to sim_microphone_sensor.egg-info/dependency_links.txt
+[1.709s] writing entry points to sim_microphone_sensor.egg-info/entry_points.txt
+[1.709s] writing requirements to sim_microphone_sensor.egg-info/requires.txt
+[1.709s] writing top-level names to sim_microphone_sensor.egg-info/top_level.txt
+[1.709s] writing manifest file 'sim_microphone_sensor.egg-info/SOURCES.txt'
+[1.732s] reading manifest file 'sim_microphone_sensor.egg-info/SOURCES.txt'
+[1.733s] writing manifest file 'sim_microphone_sensor.egg-info/SOURCES.txt'
+[1.744s] running build_ext
+[1.744s] Creating /home/anand/whistle_safety_ws/install/sim_microphone_sensor/lib/python3.10/site-packages/sim-microphone-sensor.egg-link (link to .)
+[1.745s] Installing microphone_simulator script to /home/anand/whistle_safety_ws/install/sim_microphone_sensor/lib/sim_microphone_sensor
+[1.745s] 
+[1.745s] Installed /home/anand/whistle_safety_ws/build/sim_microphone_sensor
+[1.745s] running symlink_data
+[1.745s] creating /home/anand/whistle_safety_ws/install/sim_microphone_sensor/share/ament_index/resource_index/packages
+[1.745s] symbolically linking /home/anand/whistle_safety_ws/build/sim_microphone_sensor/resource/sim_microphone_sensor -> /home/anand/whistle_safety_ws/install/sim_microphone_sensor/share/ament_index/resource_index/packages
+[1.746s] symbolically linking /home/anand/whistle_safety_ws/build/sim_microphone_sensor/package.xml -> /home/anand/whistle_safety_ws/install/sim_microphone_sensor/share/sim_microphone_sensor
+[1.746s] creating /home/anand/whistle_safety_ws/install/sim_microphone_sensor/share/sim_microphone_sensor/launch
+[1.746s] symbolically linking /home/anand/whistle_safety_ws/build/sim_microphone_sensor/launch/microphone_simulator.launch.py -> /home/anand/whistle_safety_ws/install/sim_microphone_sensor/share/sim_microphone_sensor/launch
+[1.746s] creating /home/anand/whistle_safety_ws/install/sim_microphone_sensor/share/sim_microphone_sensor/config
+[1.746s] symbolically linking /home/anand/whistle_safety_ws/build/sim_microphone_sensor/config/microphone_params.yaml -> /home/anand/whistle_safety_ws/install/sim_microphone_sensor/share/sim_microphone_sensor/config
+[1.779s] Invoked command in '/home/anand/whistle_safety_ws/build/sim_microphone_sensor' returned '0': PYTHONPATH=/home/anand/whistle_safety_ws/build/sim_microphone_sensor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anand/whistle_safety_ws/install/sim_microphone_sensor/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/anand/whistle_safety_ws/build/sim_microphone_sensor/build --no-deps symlink_data

@@ -1,0 +1,31 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from whistle_safety_msgs/msg/AudioLevel.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Point.idl"
+#include "std_msgs/msg/Header.idl"
+
+module whistle_safety_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "AudioLevel.msg" "\n"
+      "Simulated microphone sensor reading")
+    struct AudioLevel {
+      @verbatim (language="comment", text=
+        "Header with timestamp")
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "Audio intensity level (0.0 = silence, 1.0 = max)")
+      float level;
+
+      @verbatim (language="comment", text=
+        "Frequency band (Hz) - for future use")
+      float frequency;
+
+      @verbatim (language="comment", text=
+        "Sensor location on robot")
+      geometry_msgs::msg::Point sensor_position;
+    };
+  };
+};

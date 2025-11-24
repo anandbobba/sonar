@@ -1,0 +1,17 @@
+[0.925s] Invoking command in '/home/anand/whistle_safety_ws/build/zenoh_bridge': PYTHONPATH=/home/anand/whistle_safety_ws/build/zenoh_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anand/whistle_safety_ws/install/zenoh_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/anand/whistle_safety_ws/build/zenoh_bridge/build --no-deps symlink_data
+[1.146s] running develop
+[1.276s] running egg_info
+[1.286s] writing zenoh_bridge.egg-info/PKG-INFO
+[1.287s] writing dependency_links to zenoh_bridge.egg-info/dependency_links.txt
+[1.287s] writing entry points to zenoh_bridge.egg-info/entry_points.txt
+[1.288s] writing requirements to zenoh_bridge.egg-info/requires.txt
+[1.288s] writing top-level names to zenoh_bridge.egg-info/top_level.txt
+[1.306s] reading manifest file 'zenoh_bridge.egg-info/SOURCES.txt'
+[1.307s] writing manifest file 'zenoh_bridge.egg-info/SOURCES.txt'
+[1.315s] running build_ext
+[1.315s] Creating /home/anand/whistle_safety_ws/install/zenoh_bridge/lib/python3.10/site-packages/zenoh-bridge.egg-link (link to .)
+[1.316s] Installing zenoh_bridge_node script to /home/anand/whistle_safety_ws/install/zenoh_bridge/lib/zenoh_bridge
+[1.316s] 
+[1.316s] Installed /home/anand/whistle_safety_ws/build/zenoh_bridge
+[1.316s] running symlink_data
+[1.339s] Invoked command in '/home/anand/whistle_safety_ws/build/zenoh_bridge' returned '0': PYTHONPATH=/home/anand/whistle_safety_ws/build/zenoh_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anand/whistle_safety_ws/install/zenoh_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/anand/whistle_safety_ws/build/zenoh_bridge/build --no-deps symlink_data

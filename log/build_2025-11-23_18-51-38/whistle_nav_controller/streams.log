@@ -1,0 +1,25 @@
+[0.540s] Invoking command in '/home/anand/whistle_safety_ws/src/whistle_nav_controller': PYTHONPATH=/home/anand/whistle_safety_ws/build/whistle_nav_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anand/whistle_safety_ws/install/whistle_nav_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/whistle_nav_controller build --build-base /home/anand/whistle_safety_ws/build/whistle_nav_controller/build install --record /home/anand/whistle_safety_ws/build/whistle_nav_controller/install.log --single-version-externally-managed install_data
+[0.715s] running egg_info
+[0.724s] writing ../../build/whistle_nav_controller/whistle_nav_controller.egg-info/PKG-INFO
+[0.724s] writing dependency_links to ../../build/whistle_nav_controller/whistle_nav_controller.egg-info/dependency_links.txt
+[0.724s] writing entry points to ../../build/whistle_nav_controller/whistle_nav_controller.egg-info/entry_points.txt
+[0.724s] writing requirements to ../../build/whistle_nav_controller/whistle_nav_controller.egg-info/requires.txt
+[0.724s] writing top-level names to ../../build/whistle_nav_controller/whistle_nav_controller.egg-info/top_level.txt
+[0.744s] reading manifest file '../../build/whistle_nav_controller/whistle_nav_controller.egg-info/SOURCES.txt'
+[0.745s] writing manifest file '../../build/whistle_nav_controller/whistle_nav_controller.egg-info/SOURCES.txt'
+[0.746s] running build
+[0.746s] running build_py
+[0.746s] copying whistle_nav_controller/nav_to_whistle.py -> /home/anand/whistle_safety_ws/build/whistle_nav_controller/build/lib/whistle_nav_controller
+[0.746s] copying whistle_nav_controller/__init__.py -> /home/anand/whistle_safety_ws/build/whistle_nav_controller/build/lib/whistle_nav_controller
+[0.746s] running install
+[0.749s] running install_lib
+[0.758s] running install_data
+[0.759s] copying resource/whistle_nav_controller -> /home/anand/whistle_safety_ws/install/whistle_nav_controller/share/ament_index/resource_index/packages
+[0.759s] copying package.xml -> /home/anand/whistle_safety_ws/install/whistle_nav_controller/share/whistle_nav_controller
+[0.759s] running install_egg_info
+[0.768s] removing '/home/anand/whistle_safety_ws/install/whistle_nav_controller/lib/python3.10/site-packages/whistle_nav_controller-0.1.0-py3.10.egg-info' (and everything under it)
+[0.768s] Copying ../../build/whistle_nav_controller/whistle_nav_controller.egg-info to /home/anand/whistle_safety_ws/install/whistle_nav_controller/lib/python3.10/site-packages/whistle_nav_controller-0.1.0-py3.10.egg-info
+[0.769s] running install_scripts
+[0.853s] Installing nav_to_whistle script to /home/anand/whistle_safety_ws/install/whistle_nav_controller/lib/whistle_nav_controller
+[0.853s] writing list of installed files to '/home/anand/whistle_safety_ws/build/whistle_nav_controller/install.log'
+[0.873s] Invoked command in '/home/anand/whistle_safety_ws/src/whistle_nav_controller' returned '0': PYTHONPATH=/home/anand/whistle_safety_ws/build/whistle_nav_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anand/whistle_safety_ws/install/whistle_nav_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/whistle_nav_controller build --build-base /home/anand/whistle_safety_ws/build/whistle_nav_controller/build install --record /home/anand/whistle_safety_ws/build/whistle_nav_controller/install.log --single-version-externally-managed install_data

@@ -1,0 +1,1 @@
+/home/anand/whistle_safety_ws/build/zenoh_bridge/scripts/cloud_subscriber.py

@@ -1,0 +1,6 @@
+
+whistle_detector:
+  ros__parameters:
+    detection_threshold: 0.7
+    confirmation_time: 0.5
+    cooldown_time: 3.0

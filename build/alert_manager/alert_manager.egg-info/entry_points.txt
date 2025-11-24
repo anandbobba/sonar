@@ -1,0 +1,2 @@
+[console_scripts]
+alert_manager_node = alert_manager.alert_manager_node:main

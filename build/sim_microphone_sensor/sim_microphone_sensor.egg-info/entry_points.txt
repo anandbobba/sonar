@@ -1,0 +1,2 @@
+[console_scripts]
+microphone_simulator = sim_microphone_sensor.microphone_simulator:main

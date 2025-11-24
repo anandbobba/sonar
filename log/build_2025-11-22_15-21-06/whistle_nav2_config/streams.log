@@ -1,0 +1,21 @@
+[0.488s] Invoking command in '/home/anand/whistle_safety_ws/build/whistle_nav2_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anand/whistle_safety_ws/install/whistle_nav_controller:/home/anand/whistle_safety_ws/install/sim_microphone_sensor:/home/anand/whistle_safety_ws/install/zenoh_bridge:/home/anand/whistle_safety_ws/install/alert_manager:/home/anand/whistle_safety_ws/install/whistle_detector:/opt/ros/humble /usr/bin/cmake --build /home/anand/whistle_safety_ws/build/whistle_nav2_config -- -j16 -l16
+[0.877s] Invoked command in '/home/anand/whistle_safety_ws/build/whistle_nav2_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anand/whistle_safety_ws/install/whistle_nav_controller:/home/anand/whistle_safety_ws/install/sim_microphone_sensor:/home/anand/whistle_safety_ws/install/zenoh_bridge:/home/anand/whistle_safety_ws/install/alert_manager:/home/anand/whistle_safety_ws/install/whistle_detector:/opt/ros/humble /usr/bin/cmake --build /home/anand/whistle_safety_ws/build/whistle_nav2_config -- -j16 -l16
+[0.879s] Invoking command in '/home/anand/whistle_safety_ws/build/whistle_nav2_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anand/whistle_safety_ws/install/whistle_nav_controller:/home/anand/whistle_safety_ws/install/sim_microphone_sensor:/home/anand/whistle_safety_ws/install/zenoh_bridge:/home/anand/whistle_safety_ws/install/alert_manager:/home/anand/whistle_safety_ws/install/whistle_detector:/opt/ros/humble /usr/bin/cmake --install /home/anand/whistle_safety_ws/build/whistle_nav2_config
+[0.889s] -- Install configuration: ""
+[0.890s] -- Execute custom install script
+[0.890s] -- Up-to-date symlink: /home/anand/whistle_safety_ws/install/whistle_nav2_config/share/ament_index/resource_index/package_run_dependencies/whistle_nav2_config
+[0.890s] -- Up-to-date symlink: /home/anand/whistle_safety_ws/install/whistle_nav2_config/share/ament_index/resource_index/parent_prefix_path/whistle_nav2_config
+[0.891s] -- Up-to-date symlink: /home/anand/whistle_safety_ws/install/whistle_nav2_config/share/whistle_nav2_config/environment/ament_prefix_path.sh
+[0.891s] -- Up-to-date symlink: /home/anand/whistle_safety_ws/install/whistle_nav2_config/share/whistle_nav2_config/environment/ament_prefix_path.dsv
+[0.892s] -- Up-to-date symlink: /home/anand/whistle_safety_ws/install/whistle_nav2_config/share/whistle_nav2_config/environment/path.sh
+[0.893s] -- Up-to-date symlink: /home/anand/whistle_safety_ws/install/whistle_nav2_config/share/whistle_nav2_config/environment/path.dsv
+[0.893s] -- Up-to-date symlink: /home/anand/whistle_safety_ws/install/whistle_nav2_config/share/whistle_nav2_config/local_setup.bash
+[0.893s] -- Up-to-date symlink: /home/anand/whistle_safety_ws/install/whistle_nav2_config/share/whistle_nav2_config/local_setup.sh
+[0.893s] -- Up-to-date symlink: /home/anand/whistle_safety_ws/install/whistle_nav2_config/share/whistle_nav2_config/local_setup.zsh
+[0.893s] -- Up-to-date symlink: /home/anand/whistle_safety_ws/install/whistle_nav2_config/share/whistle_nav2_config/local_setup.dsv
+[0.893s] -- Symlinking: /home/anand/whistle_safety_ws/install/whistle_nav2_config/share/whistle_nav2_config/package.dsv
+[0.900s] -- Up-to-date symlink: /home/anand/whistle_safety_ws/install/whistle_nav2_config/share/ament_index/resource_index/packages/whistle_nav2_config
+[0.901s] -- Up-to-date symlink: /home/anand/whistle_safety_ws/install/whistle_nav2_config/share/whistle_nav2_config/cmake/whistle_nav2_configConfig.cmake
+[0.902s] -- Up-to-date symlink: /home/anand/whistle_safety_ws/install/whistle_nav2_config/share/whistle_nav2_config/cmake/whistle_nav2_configConfig-version.cmake
+[0.902s] -- Up-to-date symlink: /home/anand/whistle_safety_ws/install/whistle_nav2_config/share/whistle_nav2_config/package.xml
+[0.924s] Invoked command in '/home/anand/whistle_safety_ws/build/whistle_nav2_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anand/whistle_safety_ws/install/whistle_nav_controller:/home/anand/whistle_safety_ws/install/sim_microphone_sensor:/home/anand/whistle_safety_ws/install/zenoh_bridge:/home/anand/whistle_safety_ws/install/alert_manager:/home/anand/whistle_safety_ws/install/whistle_detector:/opt/ros/humble /usr/bin/cmake --install /home/anand/whistle_safety_ws/build/whistle_nav2_config

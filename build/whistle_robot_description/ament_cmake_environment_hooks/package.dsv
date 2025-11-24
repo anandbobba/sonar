@@ -1,0 +1,4 @@
+source;share/whistle_robot_description/local_setup.bash
+source;share/whistle_robot_description/local_setup.dsv
+source;share/whistle_robot_description/local_setup.sh
+source;share/whistle_robot_description/local_setup.zsh

@@ -1,0 +1,5 @@
+zenoh_bridge:
+  ros__parameters:
+    zenoh_mode: 'peer'
+    zenoh_topic: 'cloud/alerts/whistle'
+    connect_endpoint: ''

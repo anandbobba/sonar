@@ -1,0 +1,3 @@
+[console_scripts]
+autonomous_responder = whistle_detector.autonomous_responder:main
+whistle_detector_node = whistle_detector.whistle_detector_node:main

@@ -1,0 +1,36 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from whistle_safety_msgs/msg/WhistleAlert.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Point.idl"
+#include "std_msgs/msg/Header.idl"
+
+module whistle_safety_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "WhistleAlert.msg" "\n"
+      "Message type for whistle detection events")
+    struct WhistleAlert {
+      @verbatim (language="comment", text=
+        "Header with timestamp")
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "Detection confidence (0.0 to 1.0)")
+      float intensity;
+
+      @verbatim (language="comment", text=
+        "Robot position when whistle detected")
+      geometry_msgs::msg::Point position;
+
+      @verbatim (language="comment", text=
+        "Alert severity level" "\n"
+        "\"low\", \"medium\", \"high\", \"critical\"")
+      string severity;
+
+      @verbatim (language="comment", text=
+        "Unique alert ID")
+      string alert_id;
+    };
+  };
+};

@@ -1,0 +1,25 @@
+running egg_info
+writing ../../build/sim_microphone_sensor/sim_microphone_sensor.egg-info/PKG-INFO
+writing dependency_links to ../../build/sim_microphone_sensor/sim_microphone_sensor.egg-info/dependency_links.txt
+writing entry points to ../../build/sim_microphone_sensor/sim_microphone_sensor.egg-info/entry_points.txt
+writing requirements to ../../build/sim_microphone_sensor/sim_microphone_sensor.egg-info/requires.txt
+writing top-level names to ../../build/sim_microphone_sensor/sim_microphone_sensor.egg-info/top_level.txt
+reading manifest file '../../build/sim_microphone_sensor/sim_microphone_sensor.egg-info/SOURCES.txt'
+writing manifest file '../../build/sim_microphone_sensor/sim_microphone_sensor.egg-info/SOURCES.txt'
+running build
+running build_py
+copying sim_microphone_sensor/__init__.py -> /home/anand/whistle_safety_ws/build/sim_microphone_sensor/build/lib/sim_microphone_sensor
+copying sim_microphone_sensor/microphone_simulator.py -> /home/anand/whistle_safety_ws/build/sim_microphone_sensor/build/lib/sim_microphone_sensor
+running install
+running install_lib
+running install_data
+copying resource/sim_microphone_sensor -> /home/anand/whistle_safety_ws/install/sim_microphone_sensor/share/ament_index/resource_index/packages
+copying package.xml -> /home/anand/whistle_safety_ws/install/sim_microphone_sensor/share/sim_microphone_sensor
+copying launch/microphone_simulator.launch.py -> /home/anand/whistle_safety_ws/install/sim_microphone_sensor/share/sim_microphone_sensor/launch
+copying config/microphone_params.yaml -> /home/anand/whistle_safety_ws/install/sim_microphone_sensor/share/sim_microphone_sensor/config
+running install_egg_info
+removing '/home/anand/whistle_safety_ws/install/sim_microphone_sensor/lib/python3.10/site-packages/sim_microphone_sensor-0.1.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/sim_microphone_sensor/sim_microphone_sensor.egg-info to /home/anand/whistle_safety_ws/install/sim_microphone_sensor/lib/python3.10/site-packages/sim_microphone_sensor-0.1.0-py3.10.egg-info
+running install_scripts
+Installing microphone_simulator script to /home/anand/whistle_safety_ws/install/sim_microphone_sensor/lib/sim_microphone_sensor
+writing list of installed files to '/home/anand/whistle_safety_ws/build/sim_microphone_sensor/install.log'

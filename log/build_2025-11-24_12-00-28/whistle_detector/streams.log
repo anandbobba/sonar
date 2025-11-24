@@ -1,0 +1,18 @@
+[0.761s] Invoking command in '/home/anand/whistle_safety_ws/build/whistle_detector': PYTHONPATH=/home/anand/whistle_safety_ws/build/whistle_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anand/whistle_safety_ws/install/whistle_detector/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/anand/whistle_safety_ws/build/whistle_detector/build --no-deps symlink_data
+[0.983s] running develop
+[1.121s] running egg_info
+[1.130s] writing whistle_detector.egg-info/PKG-INFO
+[1.130s] writing dependency_links to whistle_detector.egg-info/dependency_links.txt
+[1.130s] writing entry points to whistle_detector.egg-info/entry_points.txt
+[1.131s] writing requirements to whistle_detector.egg-info/requires.txt
+[1.131s] writing top-level names to whistle_detector.egg-info/top_level.txt
+[1.149s] reading manifest file 'whistle_detector.egg-info/SOURCES.txt'
+[1.150s] writing manifest file 'whistle_detector.egg-info/SOURCES.txt'
+[1.160s] running build_ext
+[1.160s] Creating /home/anand/whistle_safety_ws/install/whistle_detector/lib/python3.10/site-packages/whistle-detector.egg-link (link to .)
+[1.160s] Installing autonomous_responder script to /home/anand/whistle_safety_ws/install/whistle_detector/lib/whistle_detector
+[1.161s] Installing whistle_detector_node script to /home/anand/whistle_safety_ws/install/whistle_detector/lib/whistle_detector
+[1.161s] 
+[1.161s] Installed /home/anand/whistle_safety_ws/build/whistle_detector
+[1.161s] running symlink_data
+[1.185s] Invoked command in '/home/anand/whistle_safety_ws/build/whistle_detector' returned '0': PYTHONPATH=/home/anand/whistle_safety_ws/build/whistle_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anand/whistle_safety_ws/install/whistle_detector/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/anand/whistle_safety_ws/build/whistle_detector/build --no-deps symlink_data

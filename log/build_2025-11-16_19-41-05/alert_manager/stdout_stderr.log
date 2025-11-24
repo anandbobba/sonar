@@ -1,0 +1,24 @@
+running develop
+running egg_info
+creating alert_manager.egg-info
+writing alert_manager.egg-info/PKG-INFO
+writing dependency_links to alert_manager.egg-info/dependency_links.txt
+writing entry points to alert_manager.egg-info/entry_points.txt
+writing requirements to alert_manager.egg-info/requires.txt
+writing top-level names to alert_manager.egg-info/top_level.txt
+writing manifest file 'alert_manager.egg-info/SOURCES.txt'
+reading manifest file 'alert_manager.egg-info/SOURCES.txt'
+writing manifest file 'alert_manager.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/anand/whistle_safety_ws/install/alert_manager/lib/python3.10/site-packages/alert-manager.egg-link (link to .)
+Installing alert_manager_node script to /home/anand/whistle_safety_ws/install/alert_manager/lib/alert_manager
+
+Installed /home/anand/whistle_safety_ws/build/alert_manager
+running symlink_data
+creating /home/anand/whistle_safety_ws/install/alert_manager/share/ament_index/resource_index/packages
+symbolically linking /home/anand/whistle_safety_ws/build/alert_manager/resource/alert_manager -> /home/anand/whistle_safety_ws/install/alert_manager/share/ament_index/resource_index/packages
+creating /home/anand/whistle_safety_ws/install/alert_manager/share/alert_manager
+symbolically linking /home/anand/whistle_safety_ws/build/alert_manager/package.xml -> /home/anand/whistle_safety_ws/install/alert_manager/share/alert_manager
+creating /home/anand/whistle_safety_ws/install/alert_manager/share/alert_manager/launch
+symbolically linking /home/anand/whistle_safety_ws/build/alert_manager/launch/alert_manager.launch.py -> /home/anand/whistle_safety_ws/install/alert_manager/share/alert_manager/launch
+creating /home/anand/whistle_safety_ws/install/alert_manager/share/alert_manager/config

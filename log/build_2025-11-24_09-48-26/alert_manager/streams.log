@@ -1,0 +1,26 @@
+[0.983s] Invoking command in '/home/anand/whistle_safety_ws/src/alert_manager': PYTHONPATH=/home/anand/whistle_safety_ws/build/alert_manager/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anand/whistle_safety_ws/install/alert_manager/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/alert_manager build --build-base /home/anand/whistle_safety_ws/build/alert_manager/build install --record /home/anand/whistle_safety_ws/build/alert_manager/install.log --single-version-externally-managed install_data
+[1.384s] running egg_info
+[1.410s] writing ../../build/alert_manager/alert_manager.egg-info/PKG-INFO
+[1.411s] writing dependency_links to ../../build/alert_manager/alert_manager.egg-info/dependency_links.txt
+[1.411s] writing entry points to ../../build/alert_manager/alert_manager.egg-info/entry_points.txt
+[1.411s] writing requirements to ../../build/alert_manager/alert_manager.egg-info/requires.txt
+[1.412s] writing top-level names to ../../build/alert_manager/alert_manager.egg-info/top_level.txt
+[1.470s] reading manifest file '../../build/alert_manager/alert_manager.egg-info/SOURCES.txt'
+[1.472s] writing manifest file '../../build/alert_manager/alert_manager.egg-info/SOURCES.txt'
+[1.472s] running build
+[1.472s] running build_py
+[1.472s] copying alert_manager/alert_manager_node.py -> /home/anand/whistle_safety_ws/build/alert_manager/build/lib/alert_manager
+[1.473s] copying alert_manager/__init__.py -> /home/anand/whistle_safety_ws/build/alert_manager/build/lib/alert_manager
+[1.473s] running install
+[1.479s] running install_lib
+[1.508s] running install_data
+[1.508s] copying resource/alert_manager -> /home/anand/whistle_safety_ws/install/alert_manager/share/ament_index/resource_index/packages
+[1.509s] copying package.xml -> /home/anand/whistle_safety_ws/install/alert_manager/share/alert_manager
+[1.509s] copying launch/alert_manager.launch.py -> /home/anand/whistle_safety_ws/install/alert_manager/share/alert_manager/launch
+[1.510s] running install_egg_info
+[1.541s] removing '/home/anand/whistle_safety_ws/install/alert_manager/lib/python3.10/site-packages/alert_manager-0.1.0-py3.10.egg-info' (and everything under it)
+[1.541s] Copying ../../build/alert_manager/alert_manager.egg-info to /home/anand/whistle_safety_ws/install/alert_manager/lib/python3.10/site-packages/alert_manager-0.1.0-py3.10.egg-info
+[1.543s] running install_scripts
+[1.770s] Installing alert_manager_node script to /home/anand/whistle_safety_ws/install/alert_manager/lib/alert_manager
+[1.770s] writing list of installed files to '/home/anand/whistle_safety_ws/build/alert_manager/install.log'
+[1.812s] Invoked command in '/home/anand/whistle_safety_ws/src/alert_manager' returned '0': PYTHONPATH=/home/anand/whistle_safety_ws/build/alert_manager/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anand/whistle_safety_ws/install/alert_manager/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/alert_manager build --build-base /home/anand/whistle_safety_ws/build/alert_manager/build install --record /home/anand/whistle_safety_ws/build/alert_manager/install.log --single-version-externally-managed install_data

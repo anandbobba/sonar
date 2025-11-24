@@ -1,0 +1,15 @@
+[1.576s] Invoking command in '/home/anand/whistle_safety_ws/build/whistle_nav_controller': PYTHONPATH=/home/anand/whistle_safety_ws/build/whistle_nav_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anand/whistle_safety_ws/install/whistle_nav_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/anand/whistle_safety_ws/build/whistle_nav_controller/build --no-deps symlink_data
+[1.924s] running develop
+[2.110s] running egg_info
+[2.122s] writing whistle_nav_controller.egg-info/PKG-INFO
+[2.123s] writing dependency_links to whistle_nav_controller.egg-info/dependency_links.txt
+[2.123s] writing requirements to whistle_nav_controller.egg-info/requires.txt
+[2.124s] writing top-level names to whistle_nav_controller.egg-info/top_level.txt
+[2.152s] reading manifest file 'whistle_nav_controller.egg-info/SOURCES.txt'
+[2.154s] writing manifest file 'whistle_nav_controller.egg-info/SOURCES.txt'
+[2.169s] running build_ext
+[2.169s] Creating /home/anand/whistle_safety_ws/install/whistle_nav_controller/lib/python3.10/site-packages/whistle-nav-controller.egg-link (link to .)
+[2.170s] 
+[2.170s] Installed /home/anand/whistle_safety_ws/build/whistle_nav_controller
+[2.170s] running symlink_data
+[2.229s] Invoked command in '/home/anand/whistle_safety_ws/build/whistle_nav_controller' returned '0': PYTHONPATH=/home/anand/whistle_safety_ws/build/whistle_nav_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anand/whistle_safety_ws/install/whistle_nav_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/anand/whistle_safety_ws/build/whistle_nav_controller/build --no-deps symlink_data

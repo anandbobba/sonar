@@ -1,0 +1,17 @@
+/home/anand/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+  warnings.warn(msg)
+running develop
+running egg_info
+writing sim_microphone_sensor.egg-info/PKG-INFO
+writing dependency_links to sim_microphone_sensor.egg-info/dependency_links.txt
+writing entry points to sim_microphone_sensor.egg-info/entry_points.txt
+writing requirements to sim_microphone_sensor.egg-info/requires.txt
+writing top-level names to sim_microphone_sensor.egg-info/top_level.txt
+reading manifest file 'sim_microphone_sensor.egg-info/SOURCES.txt'
+writing manifest file 'sim_microphone_sensor.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/anand/whistle_safety_ws/install/sim_microphone_sensor/lib/python3.10/site-packages/sim-microphone-sensor.egg-link (link to .)
+Installing microphone_simulator script to /home/anand/whistle_safety_ws/install/sim_microphone_sensor/lib/sim_microphone_sensor
+
+Installed /home/anand/whistle_safety_ws/build/sim_microphone_sensor
+running symlink_data

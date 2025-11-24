@@ -1,0 +1,18 @@
+running develop
+running egg_info
+creating whistle_nav_controller.egg-info
+writing whistle_nav_controller.egg-info/PKG-INFO
+writing dependency_links to whistle_nav_controller.egg-info/dependency_links.txt
+writing requirements to whistle_nav_controller.egg-info/requires.txt
+writing top-level names to whistle_nav_controller.egg-info/top_level.txt
+writing manifest file 'whistle_nav_controller.egg-info/SOURCES.txt'
+reading manifest file 'whistle_nav_controller.egg-info/SOURCES.txt'
+writing manifest file 'whistle_nav_controller.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/anand/whistle_safety_ws/install/whistle_nav_controller/lib/python3.10/site-packages/whistle-nav-controller.egg-link (link to .)
+
+Installed /home/anand/whistle_safety_ws/build/whistle_nav_controller
+running symlink_data
+creating /home/anand/whistle_safety_ws/install/whistle_nav_controller/share/ament_index/resource_index/packages
+symbolically linking /home/anand/whistle_safety_ws/build/whistle_nav_controller/resource/whistle_nav_controller -> /home/anand/whistle_safety_ws/install/whistle_nav_controller/share/ament_index/resource_index/packages
+symbolically linking /home/anand/whistle_safety_ws/build/whistle_nav_controller/package.xml -> /home/anand/whistle_safety_ws/install/whistle_nav_controller/share/whistle_nav_controller

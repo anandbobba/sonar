@@ -1,0 +1,7 @@
+{
+  "package_name": "whistle_safety_msgs",
+  "non_idl_tuples": [
+    "/home/anand/whistle_safety_ws/src/whistle_safety_msgs:msg/WhistleAlert.msg",
+    "/home/anand/whistle_safety_ws/src/whistle_safety_msgs:msg/AudioLevel.msg"
+  ]
+}

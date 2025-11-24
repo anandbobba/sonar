@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: alert_manager
+Version: 0.1.0
+Summary: Alert management and cloud forwarding
+Maintainer: anand
+Maintainer-email: anandchowdary2005@gmail.com
+License: MIT
+Requires-Dist: setuptools
+Dynamic: license
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: requires-dist
+Dynamic: summary

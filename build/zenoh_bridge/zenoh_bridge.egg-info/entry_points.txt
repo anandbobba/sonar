@@ -1,0 +1,2 @@
+[console_scripts]
+zenoh_bridge_node = zenoh_bridge.zenoh_bridge_node:main
