@@ -1,3 +1,4 @@
 [console_scripts]
 autonomous_responder = whistle_detector.autonomous_responder:main
+sound_source_visualizer = whistle_detector.sound_source_visualizer:main
 whistle_detector_node = whistle_detector.whistle_detector_node:main

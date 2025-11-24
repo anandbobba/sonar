@@ -153,6 +153,29 @@ def generate_launch_description():
             }]
         ),
 
+        # Sound source visualizer for RViz
+        Node(
+            package='whistle_detector',
+            executable='sound_source_visualizer',
+            output='screen',
+            parameters=[{
+                'sound_x': sound_x_cfg,
+                'sound_y': sound_y_cfg,
+                'sound_z': 0.5,
+                'use_sim_time': True
+            }]
+        ),
+
+        # RViz2 for visualization
+        Node(
+            package='rviz2',
+            executable='rviz2',
+            name='rviz2',
+            arguments=['-d', os.path.join(get_package_share_directory('whistle_detector'), 'rviz', 'whistle_follower.rviz')],
+            parameters=[{'use_sim_time': True}],
+            output='screen'
+        ),
+
         # Demo helper: automatically enables virtual whistle at specified location
         ExecuteProcess(
             cmd=['python3', os.path.join(gazebo_pkg, 'scripts', 'demo_microphone.py'), sound_x_cfg, sound_y_cfg],

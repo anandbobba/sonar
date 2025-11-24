@@ -14,6 +14,7 @@ setup(
         ('share/' + package_name, ['package.xml']),
         (os.path.join('share', package_name, 'launch'), glob('launch/*.py')),
         (os.path.join('share', package_name, 'config'), glob('config/*.yaml')),
+        (os.path.join('share', package_name, 'rviz'), glob('rviz/*.rviz')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -25,6 +26,7 @@ setup(
         'console_scripts': [
             'whistle_detector_node = whistle_detector.whistle_detector_node:main',
             'autonomous_responder = whistle_detector.autonomous_responder:main',
+            'sound_source_visualizer = whistle_detector.sound_source_visualizer:main',
         ],
     },
 )

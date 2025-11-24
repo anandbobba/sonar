@@ -1,0 +1,305 @@
+╔═══════════════════════════════════════════════════════════════════════════╗
+║              🎨 RVIZ VISUALIZATION NOW AVAILABLE!                         ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│  ✅ WHAT'S NEW                                                            │
+└───────────────────────────────────────────────────────────────────────────┘
+
+RViz2 is now automatically launched with the system!
+
+You will see TWO windows:
+  1. 🎮 Gazebo - 3D physics simulation
+  2. 🎨 RViz - Robot visualization & monitoring
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│  🎨 WHAT YOU'LL SEE IN RVIZ                                               │
+└───────────────────────────────────────────────────────────────────────────┘
+
+✨ Robot Model
+   └─> Full 3D visualization of the robot
+       • Base platform
+       • Wheels (spinning when moving)
+       • Lidar sensor
+       • Microphone link
+
+📡 Lidar Scan (Red dots)
+   └─> 360° laser scan visualization
+       • Shows obstacles detected
+       • Updates in real-time
+       • Red flat squares
+
+🎯 Sound Source Marker (Yellow)
+   └─> Multiple visual indicators:
+       • Pulsing yellow sphere at target
+       • Yellow beam from ground to source
+       • Red arrow pointing down
+       • Text label showing coordinates
+       • Animated pulsing effect!
+
+🚨 Alert Markers
+   └─> When whistle is detected:
+       • Colored spheres at detection location
+       • Color indicates severity:
+         * Red = Critical
+         * Orange = High
+         * Yellow = Medium
+         * Blue = Low
+       • Text labels with alert info
+       • Persist for 30 seconds
+
+📍 Coordinate Frames (TF)
+   └─> Shows robot coordinate system
+       • odom (world frame)
+       • base_footprint
+       • base_link
+       • lidar_link
+       • microphone_link
+       • All wheel frames
+
+🔵 Grid
+   └─> Reference grid with 1m squares
+       • Helps visualize distances
+       • Centered on robot start position
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│  🚀 HOW TO RUN (NO CHANGE NEEDED!)                                        │
+└───────────────────────────────────────────────────────────────────────────┘
+
+Just run as before - RViz starts automatically:
+
+  ./demo.sh
+  
+  Then select option 1 or 2!
+
+Both Gazebo AND RViz will open together.
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│  🎛️ RVIZ CONTROLS & TIPS                                                 │
+└───────────────────────────────────────────────────────────────────────────┘
+
+🖱️ MOUSE CONTROLS:
+   Left Click + Drag ........ Rotate view
+   Middle Click + Drag ...... Pan view
+   Scroll Wheel ............. Zoom in/out
+   Right Click .............. Context menu
+
+📐 VIEW OPTIONS (Top toolbar):
+   Interact ................. Default mode
+   Move Camera .............. Reposition view
+   Select ................... Select objects
+   Focus Camera ............. Focus on selection
+   Measure .................. Measure distances
+   2D Pose Estimate ......... Set robot pose
+   2D Nav Goal .............. Set navigation goal
+
+🎨 DISPLAY PANEL (Left side):
+   Check/Uncheck items to show/hide:
+   ☑ Grid ................... Show reference grid
+   ☑ TF ..................... Show coordinate frames
+   ☑ Robot Model ............ Show robot
+   ☑ LaserScan .............. Show lidar data
+   ☑ Alert Markers .......... Show alert spheres
+   ☑ Sound Source Marker .... Show target marker
+
+⚙️ BEST VIEW SETTINGS:
+   1. Keep "Orbit" view type (default)
+   2. Set Focal Point to (1.5, 1.5, 0) to center on action
+   3. Distance: 10m for overview
+   4. Pitch: ~45° (0.785 rad) for angled view
+   5. Yaw: ~45° (0.785 rad) for diagonal view
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│  🎬 WATCHING THE ACTION                                                   │
+└───────────────────────────────────────────────────────────────────────────┘
+
+1️⃣  System starts - You'll see:
+    • Gazebo window (physics simulation)
+    • RViz window (visualization)
+    • Robot at origin (0, 0)
+    • Yellow pulsing sphere at target
+
+2️⃣  Enable sound in NEW terminal:
+    ros2 param set /microphone_simulator whistle_intensity 0.6
+
+3️⃣  Watch in BOTH windows:
+    
+    IN GAZEBO:
+    • Robot physically moves
+    • Wheels rotate
+    • Robot navigates around obstacles
+    
+    IN RVIZ:
+    • Red lidar dots show obstacles
+    • Robot model moves smoothly
+    • TF frames update
+    • Sound source marker pulses
+    • Path traced toward target
+
+4️⃣  When whistle detected (>0.7):
+    • Alert sphere appears at robot location
+    • Color based on severity
+    • Text label with alert ID
+    • Marker persists for 30 seconds
+
+5️⃣  Robot reaches target:
+    • Stops near yellow sphere
+    • Mission complete!
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│  🔧 CUSTOMIZING RVIZ VIEW                                                 │
+└───────────────────────────────────────────────────────────────────────────┘
+
+Want to change what you see?
+
+1. Adjust Display Properties (left panel):
+   • Click on any display item
+   • Expand to see properties
+   • Change colors, sizes, opacity
+
+2. Example customizations:
+   
+   Change lidar color:
+   • Click "LaserScan"
+   • Find "Color Transformer"
+   • Change to "Intensity" or keep "FlatColor"
+   • Adjust "Color" property
+   
+   Change grid size:
+   • Click "Grid"
+   • Change "Cell Size" (default: 1m)
+   • Change "Plane Cell Count" for more/less cells
+   
+   Hide TF axes:
+   • Click "TF"
+   • Uncheck "Show Axes"
+   • Or uncheck "Show Names"
+
+3. Save your configuration:
+   File → Save Config As...
+   (saves to ~/.rviz2/ or custom location)
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│  🐛 TROUBLESHOOTING RVIZ                                                  │
+└───────────────────────────────────────────────────────────────────────────┘
+
+❌ RViz doesn't open:
+   • Install rviz2: sudo apt install ros-humble-rviz2
+   • Check if already running: pkill rviz2
+
+❌ "Fixed Frame [odom] does not exist":
+   • Wait a few seconds - takes time to initialize
+   • Check robot_state_publisher is running
+   • Verify tf is being published
+
+❌ Robot model not showing:
+   • Check "Robot Model" is enabled (checkmark)
+   • Wait for robot_description topic
+   • Verify robot spawned in Gazebo
+
+❌ Lidar scan not visible:
+   • Check "LaserScan" is enabled
+   • Verify /scan topic has data:
+     ros2 topic echo /scan --once
+   • Try changing "Style" to "Points" or "Spheres"
+
+❌ Sound source marker not showing:
+   • Check "Sound Source Marker" is enabled
+   • Verify visualizer node is running:
+     ros2 node list | grep sound_source
+   • Check topic:
+     ros2 topic echo /sound_source_marker
+
+❌ RViz window too cluttered:
+   • Hide elements you don't need
+   • Uncheck Grid if not needed
+   • Hide TF if axes are distracting
+   • Reduce marker sizes in properties
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│  📊 MONITORING WITH RVIZ                                                  │
+└───────────────────────────────────────────────────────────────────────────┘
+
+Use RViz to monitor:
+
+✅ Robot Position
+   → Watch coordinates in TF frame
+
+✅ Obstacle Detection
+   → Red lidar points show obstacles
+   → Gaps indicate clear paths
+
+✅ Navigation Progress
+   → Watch robot move toward yellow sphere
+   → See speed changes (faster when closer)
+
+✅ Alert Generation
+   → Colored spheres appear on detection
+   → Text shows alert details
+
+✅ System Health
+   → All TF frames updating = healthy
+   → Lidar spinning = sensors working
+   → Robot model smooth = good odometry
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│  🎓 ADVANCED: RUN RVIZ SEPARATELY                                         │
+└───────────────────────────────────────────────────────────────────────────┘
+
+If you want to run RViz independently (not auto-launched):
+
+1. Comment out RViz in launch file:
+   Edit: adaptive_sound_follower.launch.py
+   Comment the RViz node section
+
+2. Launch system without RViz:
+   ./demo.sh
+
+3. Start RViz separately:
+   ros2 launch whistle_detector rviz.launch.py
+
+This gives you more control over when RViz starts.
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│  💡 QUICK TIPS                                                            │
+└───────────────────────────────────────────────────────────────────────────┘
+
+• Press 'R' to reset view to default
+• Use 'F' to focus on selected object
+• Scroll to zoom, middle-click to pan
+• The yellow pulsing sphere is your target!
+• Red lidar dots = obstacles detected
+• TF frames show robot orientation
+• Alert markers stack up (max 30 seconds each)
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│  📸 WHAT IT LOOKS LIKE                                                    │
+└───────────────────────────────────────────────────────────────────────────┘
+
+   ┌─────────────────────────────────────┐
+   │         RViz2 Window                │
+   ├─────────────────────────────────────┤
+   │ Displays │   3D View                │
+   │          │                           │
+   │ ☑ Grid   │     [Robot]  🔴🔴🔴       │
+   │ ☑ TF     │         ↓                │
+   │ ☑ Robot  │         ·                │
+   │ ☑ Lidar  │         ·                │
+   │ ☑ Alerts │         ·                │
+   │ ☑ Sound  │         ↓                │
+   │          │       ⚠️ Alert            │
+   │          │         ↓                │
+   │          │         ↓                │
+   │          │    🎯 [Target]           │
+   │          │       ⬇️                 │
+   │          │      💛 ~~~              │
+   │          │                           │
+   └──────────┴───────────────────────────┘
+
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                                                                           ║
+║  🎉 RVIZ IS NOW INTEGRATED! Just run: ./demo.sh                          ║
+║                                                                           ║
+║  Both Gazebo and RViz will open automatically!                           ║
+║                                                                           ║
+╚═══════════════════════════════════════════════════════════════════════════╝

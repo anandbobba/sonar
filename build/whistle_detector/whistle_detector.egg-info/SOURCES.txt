@@ -10,11 +10,14 @@ setup.py
 ../../build/whistle_detector/whistle_detector.egg-info/zip-safe
 config/detector_params.yaml
 launch/adaptive_sound_follower.launch.py
+launch/rviz.launch.py
 launch/whistle_detector.launch.py
 resource/whistle_detector
+rviz/whistle_follower.rviz
 test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py
 whistle_detector/__init__.py
 whistle_detector/autonomous_responder.py
+whistle_detector/sound_source_visualizer.py
 whistle_detector/whistle_detector_node.py
