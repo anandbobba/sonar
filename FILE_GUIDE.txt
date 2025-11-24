@@ -1,0 +1,276 @@
+╔═══════════════════════════════════════════════════════════════════════════╗
+║          📚 COMPLETE FILE GUIDE - What Each File Does                    ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│  🎯 START HERE - DOCUMENTATION                                            │
+└───────────────────────────────────────────────────────────────────────────┘
+
+📘 COMPLETE_README.md (***READ THIS FIRST***)
+   └─> Full documentation covering:
+       • Problem statement & objectives
+       • System architecture with diagrams
+       • What is Zenoh and why we use it
+       • Every component explained in detail
+       • How everything works together
+       • Installation & setup
+       • Troubleshooting guide
+       ⏱️ Reading time: 20-30 minutes
+       ⭐ Contains everything you need to understand the system
+
+📖 README_ADAPTIVE_FOLLOWER.md
+   └─> Quick start guide
+       • Overview of robot behavior
+       • Simple run instructions
+       • Basic parameter changes
+       ⏱️ Reading time: 5 minutes
+
+📗 RUN_INSTRUCTIONS.md
+   └─> Detailed running guide
+       • All launch options
+       • Parameter explanations
+       • Advanced usage
+       • Testing scenarios
+       ⏱️ Reading time: 10 minutes
+
+📙 PARAMETER_CHEATSHEET.md
+   └─> Quick reference for parameters
+       • Common launch commands
+       • Runtime parameter changes
+       • Test scenarios
+       • Quick fixes
+       ⏱️ Reading time: 5 minutes
+
+📄 QUICK_START.txt
+   └─> Visual quick reference
+       • One-page overview
+       • Command cheat sheet
+       ⏱️ Reading time: 2 minutes
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│  🚀 RUN SCRIPTS - Execute These                                           │
+└───────────────────────────────────────────────────────────────────────────┘
+
+🎮 ./demo.sh (***USE THIS TO RUN***)
+   └─> Interactive menu launcher
+       • Option 1: Default settings
+       • Option 2: Custom position
+       • Option 3: Cautious mode
+       • Option 4: Aggressive mode
+       • Option 5: Show cheatsheet
+   
+🏃 ./run_adaptive_follower.sh
+   └─> Quick one-command launcher
+       • Builds and sources workspace
+       • Launches with defaults
+   
+🧪 ./test_position_1_3.sh
+   └─> Test with specific position (1, 3)
+       • Good for testing nearby targets
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│  📦 SOURCE CODE - The Actual Implementation                               │
+└───────────────────────────────────────────────────────────────────────────┘
+
+🔷 src/sim_microphone_sensor/sim_microphone_sensor/microphone_simulator.py
+   PURPOSE: Simulates audio sensor
+   WHAT IT DOES:
+   • Calculates sound intensity based on distance from source
+   • Uses inverse square law for realistic attenuation
+   • Adds background noise
+   • Publishes to /simulated_audio_level at 10 Hz
+   KEY CONCEPTS: Distance calculation, audio physics simulation
+
+🔷 src/whistle_detector/whistle_detector/whistle_detector_node.py
+   PURPOSE: Detects whistle patterns
+   WHAT IT DOES:
+   • Monitors audio levels continuously
+   • State machine: IDLE → DETECTING → ALERT → COOLDOWN
+   • Threshold-based detection with hysteresis
+   • Classifies severity (low/medium/high/critical)
+   • Publishes alerts to /whistle_alert
+   KEY CONCEPTS: State machine, threshold detection, signal processing
+
+🔷 src/whistle_detector/whistle_detector/autonomous_responder.py
+   PURPOSE: Navigates robot toward sound
+   WHAT IT DOES:
+   • Calculates bearing to sound source
+   • Adaptive speed based on audio level:
+     * Weak (0.15-0.3): 0.1 m/s (🐢)
+     * Moderate (0.3-0.6): 0.3 m/s (🚶)
+     * Strong (>0.6): 0.5 m/s (🏃)
+     * Very strong (>0.8): STOP (✋)
+   • Obstacle avoidance using lidar
+   • Exponential moving average for smooth control
+   • Publishes velocity commands to /cmd_vel
+   KEY CONCEPTS: Navigation, PID-like control, sensor fusion
+
+🔷 src/alert_manager/alert_manager/alert_manager_node.py
+   PURPOSE: Enriches and manages alerts
+   WHAT IT DOES:
+   • Receives whistle alerts
+   • Adds robot position from odometry
+   • Adds timestamp and unique ID
+   • Formats as JSON for cloud
+   • Creates RViz visualization markers
+   • Publishes to /alert_to_cloud
+   KEY CONCEPTS: Data enrichment, JSON formatting, visualization
+
+🔷 src/zenoh_bridge/zenoh_bridge/zenoh_bridge_node.py
+   PURPOSE: Bridges ROS 2 to Zenoh network
+   WHAT IT DOES:
+   • Subscribes to /alert_to_cloud
+   • Translates ROS 2 messages to Zenoh format
+   • Publishes to Zenoh network (cloud/alerts/whistle)
+   • Handles peer-to-peer or client-server connection
+   • Works in simulation mode if Zenoh not installed
+   KEY CONCEPTS: Protocol bridging, cloud communication
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│  ⚙️ CONFIGURATION FILES                                                   │
+└───────────────────────────────────────────────────────────────────────────┘
+
+🔧 src/whistle_detector/launch/adaptive_sound_follower.launch.py
+   PURPOSE: Main launch file
+   WHAT IT DOES:
+   • Starts Gazebo with world
+   • Spawns robot
+   • Launches all nodes:
+     - Microphone simulator
+     - Whistle detector
+     - Autonomous responder
+     - Alert manager
+     - Zenoh bridge
+   • Sets all parameters
+   • Runs demo helper script
+   KEY: This is what runs when you execute ./demo.sh
+
+🌍 src/whistle_gazebo/worlds/whistle_test.world
+   PURPOSE: Simulation environment
+   WHAT IT CONTAINS:
+   • Grass ground plane
+   • Directional sunlight with shadows
+   • Atmospheric fog
+   • Realistic obstacles:
+     - Trees (at -2, 4)
+     - Rock cluster (at 1, -2.5)
+     - Bench (at -3, -2)
+     - Wooden crates
+   • Yellow glowing sphere (whistle source marker)
+   KEY: Obstacles are positioned away from target path
+
+🤖 src/whistle_robot_description/urdf/whistle_robot.urdf.xacro
+   PURPOSE: Robot model definition
+   WHAT IT DEFINES:
+   • Base platform (differential drive)
+   • Two driven wheels + caster wheel
+   • Lidar sensor (360°, 10m range)
+   • Microphone link
+   • Visual appearance
+   • Physics properties
+   KEY: Describes the robot's physical structure
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│  📨 MESSAGE DEFINITIONS                                                   │
+└───────────────────────────────────────────────────────────────────────────┘
+
+📨 src/whistle_safety_msgs/msg/AudioLevel.msg
+   PURPOSE: Audio sensor data format
+   CONTAINS:
+   • float32 level (0.0-1.0)
+   • geometry_msgs/Point sensor_position
+   USED BY: Microphone simulator → Whistle detector & Responder
+
+📨 src/whistle_safety_msgs/msg/WhistleAlert.msg
+   PURPOSE: Alert message format
+   CONTAINS:
+   • Header (timestamp, frame)
+   • string alert_id (unique)
+   • float32 intensity
+   • string severity (low/medium/high/critical)
+   • Point position
+   USED BY: Whistle detector → Alert manager
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│  🔄 DATA FLOW VISUALIZATION                                               │
+└───────────────────────────────────────────────────────────────────────────┘
+
+Sound Source (Gazebo)
+        ↓
+microphone_simulator.py
+        ↓ /simulated_audio_level
+        ├───→ whistle_detector_node.py
+        │           ↓ /whistle_alert
+        │     alert_manager_node.py
+        │           ↓ /alert_to_cloud
+        │     zenoh_bridge_node.py
+        │           ↓ Zenoh Network
+        │     Cloud Systems
+        │
+        └───→ autonomous_responder.py
+                    ↓ /cmd_vel
+              Robot Movement
+              (with obstacle avoidance via /scan)
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│  🎓 LEARNING PATH - Read in This Order                                    │
+└───────────────────────────────────────────────────────────────────────────┘
+
+1️⃣  Start: Read COMPLETE_README.md (this explains EVERYTHING)
+2️⃣  Practice: Run ./demo.sh and observe behavior
+3️⃣  Experiment: Follow PARAMETER_CHEATSHEET.md to adjust behavior
+4️⃣  Code: Read microphone_simulator.py (simplest component)
+5️⃣  Code: Read whistle_detector_node.py (state machine)
+6️⃣  Code: Read autonomous_responder.py (navigation)
+7️⃣  Code: Read alert_manager_node.py (data enrichment)
+8️⃣  Code: Read zenoh_bridge_node.py (cloud integration)
+9️⃣  Advanced: Study launch files to understand system integration
+🔟  Master: Modify and extend the system!
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│  🎯 QUICK REFERENCE - Most Important Files                                │
+└───────────────────────────────────────────────────────────────────────────┘
+
+TO UNDERSTAND THE SYSTEM:
+  👉 COMPLETE_README.md
+
+TO RUN THE SYSTEM:
+  👉 ./demo.sh
+
+TO ADJUST PARAMETERS:
+  👉 PARAMETER_CHEATSHEET.md
+
+TO UNDERSTAND THE CODE:
+  👉 autonomous_responder.py (navigation logic)
+  👉 whistle_detector_node.py (detection logic)
+  👉 zenoh_bridge_node.py (cloud communication)
+
+TO MODIFY THE ENVIRONMENT:
+  👉 whistle_test.world
+
+TO CHANGE LAUNCH BEHAVIOR:
+  👉 adaptive_sound_follower.launch.py
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│  ✅ QUICK START CHECKLIST                                                 │
+└───────────────────────────────────────────────────────────────────────────┘
+
+□ Read COMPLETE_README.md (at least the overview sections)
+□ Run: cd ~/whistle_safety_ws && colcon build && source install/setup.bash
+□ Run: ./demo.sh
+□ Select option 1 (default)
+□ Wait for Gazebo to open
+□ In NEW terminal: ros2 param set /microphone_simulator whistle_intensity 0.6
+□ Watch robot move toward yellow light
+□ Experiment with different intensities (0.2, 0.5, 0.8)
+□ Try other demo options (cautious/aggressive modes)
+□ Read PARAMETER_CHEATSHEET.md for more experiments
+
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                                                                           ║
+║  🎉 NOW YOU KNOW WHAT EVERY FILE DOES!                                   ║
+║                                                                           ║
+║  Start with: ./demo.sh                                                   ║
+║  Learn from: COMPLETE_README.md                                          ║
+║                                                                           ║
+╚═══════════════════════════════════════════════════════════════════════════╝
